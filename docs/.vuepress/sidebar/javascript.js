@@ -4,6 +4,7 @@ module.exports = [{
         '',
         'bom',
         'event-loop',
+        'inAndOf',
         'promise',
         'emitter',
         'webworker',

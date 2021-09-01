@@ -3,6 +3,7 @@ module.exports = [{
     children: [
         '',
         'xss',
-        'websocket'
+        'websocket',
+        'status-code'
     ],
 }]
