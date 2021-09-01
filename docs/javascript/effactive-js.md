@@ -3,6 +3,11 @@
 
 ![effactive-js](effactive-js.jpg)
 
+## 概述
+
+下面介绍编写 `javaScript` 中会用到的一些高质量代码建议。这是我在读《Effective JavaScript》 之后记下的笔记。
+
+
 1. 判断 NaN
 
 `NaN` 不等于本身，提供的 `isNaN` 方法无法判断是否为 `NaN`，需要我们重写。
@@ -164,16 +169,35 @@ console.log(bar.get());    // 123
 
 ```js
 function foo(name, method) {
-    let shift = [].shift
-    shift.call(arguments)
-    shift.call(arguments)
-    console.log(name, method) // 1 2
+    let shift = [].shift();
+    shift.call(arguments);
+    shift.call(arguments);
+    console.log(name, method); // 1 2
 }
 
-foo('bar', 'add', 1, 2)
+foo('bar', 'add', 1, 2);
 ```
 
 这是由于 `name` 保存的是 `arguments[0]`，我们修改了 `arguments[0]` 之后， `name` 也跟随变化，它是 `arguments[0]` 的引用。
+
+
+9. 判断数组，对象是否为空
+
+
+```js
+let arr = [];
+
+arr.length === 0; // true
+arr.toString() === ""; // true
+```
+
+判断对象是否为空:
+
+```js
+let obj = {};
+Object.keys(obj).length === 0; // true
+JSON.stringify(obj) === "{}" // true
+```
 
 
 参考资料：
