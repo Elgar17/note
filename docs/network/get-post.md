@@ -4,14 +4,38 @@
 
 ## 1、概述
 
-HTTP 中的
+HTTP 中的 GET 请求和 POST 请求时最为常用的方法，在使用上和发送请求的过程中有一些差别，下面结合实例，进行
 
 ## 2、GET
 
 
 
+```HTTP
+GET /login?name=Tom HTTP/1.1
+Accept: */*
+Host: localhost:3000
+Connection: keep-alive
+```
+
+
 ## 3、POST
 
+
+```HTTP
+POST /login? HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.28.3
+Accept: */*
+Postman-Token: 334396c3-9dff-4401-9f3f-0497f75ecf66
+Host: 192.168.3.68:3000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 23
+
+{
+    "name": "Tom"
+}
+```
 
 ## 4、区别
 
