@@ -4,6 +4,7 @@ module.exports = [{
         '',
         'xss',
         'websocket',
-        'status-code'
+        'status-code',
+        'get-post'
     ],
 }]
