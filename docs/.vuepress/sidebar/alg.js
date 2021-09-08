@@ -2,7 +2,8 @@ module.exports = [{
     title: '数据结构',
     children: [
         '',
-        'd-stack'
+        'd-stack',
+        'd-queue'
     ]
     },{
     title: '前端常见算法',

@@ -4,7 +4,8 @@
 
 ## 数据结构
 
-1. [Stack(栈)](./d-stack.md)
+1. [Stack(栈结构)](./d-stack.md)
+1. [Queue(队列结构)](./d-queue.md)
 
 
 ## 算法
