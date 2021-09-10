@@ -8,7 +8,8 @@ module.exports = [{
         'promise',
         'emitter',
         'webworker',
-        'effactive-js'
+        'effactive-js',
+        'debounce-throttle'
     ],
 }, {
     title: 'Typescript',
