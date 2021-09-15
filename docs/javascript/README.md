@@ -7,6 +7,7 @@
 1. [JS BOM（浏览器对象模型）](./bom.md)
 1. [如何编写高质量 JavaScript 代码](./effactive-js.md)
 1. [深拷贝](./clode-deep.md)
+1. [实现数组的常用方法](./array-method.md)
 1. [javascript事件循环（Event loop）](./event-loop.md)
 1. [异步函数 promise](./promise.md)
 1. [多行程 Web Worker 教程](./webworker.md)
