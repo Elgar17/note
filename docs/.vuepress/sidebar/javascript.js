@@ -9,7 +9,9 @@ module.exports = [{
         'emitter',
         'webworker',
         'effactive-js',
-        'debounce-throttle'
+        'debounce-throttle',
+        'array-method',
+        'instanceof'
     ],
 }, {
     title: 'Typescript',
