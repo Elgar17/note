@@ -10,7 +10,7 @@
 1. [javascript事件循环（Event loop）](./event-loop.md)
 1. [异步函数 promise](./promise.md)
 1. [多行程 Web Worker 教程](./webworker.md)
-1. [防抖和节流截留函数](./debounce-throttle.md)
+1. [防抖和节流函数](./debounce-throttle.md)
 1. [设计模式 -- 发布订阅](./emitter.md)
 
 ## 2、Typescript

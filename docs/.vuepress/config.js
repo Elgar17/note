@@ -9,6 +9,12 @@ module.exports = {
       rel: 'icon',
       href: '/favicon.png'
     }],
+    [
+      'meta', {
+        name: 'baidu-site-verification',
+        content: 'code-qGZsGsi6Kf'
+      }
+    ],
     // 添加百度统计
     [
       "script",
