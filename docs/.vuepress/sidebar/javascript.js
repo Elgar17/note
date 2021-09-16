@@ -10,7 +10,8 @@ module.exports = [{
         'webworker',
         'effactive-js',
         'debounce-throttle',
-        'array-method'
+        'array-method',
+        'instanceof'
     ],
 }, {
     title: 'Typescript',
