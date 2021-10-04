@@ -8,6 +8,8 @@ module.exports = [{
     },{
     title: '前端常见算法',
     children: [
+        'binary-search',
+        'coin-change',
         'parsing-url',
         'num-ways',
         'conversion',
@@ -15,6 +17,10 @@ module.exports = [{
         'chunk',
         'quick-sort',
         'max-sub-nums',
-        'compare-version'
+        'compare-version',
+        'get-kth-from-end',
+        'k-largest-el',
+        'max-sub-nums',
+        'version-sort'
     ],
 }]
