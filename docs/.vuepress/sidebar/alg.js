@@ -13,6 +13,8 @@ module.exports = [{
         'conversion',
         'k-largest-el',
         'chunk',
-        'quick-sort'
+        'quick-sort',
+        'max-sub-nums',
+        'compare-version'
     ],
 }]

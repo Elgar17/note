@@ -56,21 +56,21 @@ var data = [{
 参数2：需要传入一的 DOM 节点
 
 ```js
-var body = document.body;
+var body = document.body
 
 function render(data, dom) {
     if (data.length == 0) return
     for (var i = 0; i < data.length; i++) {
         // 创建一个 div 节点
-        let div = document.createElement('div');
+        let div = document.createElement('div')
         // 将内容添加到 div 上
-        div.append(data[i].name);
+        div.append(data[i].name)
         // 判断子节点
         if (data[i].children) {
-            render(data[i].children, div);
+            render(data[i].children, div)
         }
         // 将创建的 div 添加到传入的 dom 元素中
-        dom.append(div);
+        dom.append(div)
     }
 }
 ```

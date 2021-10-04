@@ -9,14 +9,15 @@
 输出：1 
 ```
 
-
-
 ## 实现
 
-(2) 递归
+**(1) 递归**
 
-(2) 非递归
+// TODO：用递归实现
 
+**(2) 非递归**
+
+对于本题，这种写法可能容易理解一点。
 ```js
 function coinmin(x) {
     let f = [0];
@@ -31,7 +32,7 @@ function coinmin(x) {
 }
 ```
 
-
+这是一个通用的解法。
 ```js 
 function coinChange(x, coins) {
     let f = [0];
