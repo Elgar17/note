@@ -1,5 +1,6 @@
-# 最长回文子串
+# 5. 最长回文子串
 
+给你一个字符串 s，找到 s 中最长的回文子串。
 ```
 输入：s = "babad"
 输出："bab"
@@ -8,13 +9,8 @@
 
 
 ## 实现
-**（1）、暴力搜索**
 
-```
-
-```
-
-**（2）、动态规划**
+动态规划
 
 状态转移方程如下， i 表示字串开始位置，j 表示字串结束位置
 
@@ -54,3 +50,7 @@ function maxStr(s) {
 }
 
 ```
+
+
+链接：https://leetcode-cn.com/problems/longest-palindromic-substring/
+来源：力扣（LeetCode）

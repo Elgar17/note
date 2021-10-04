@@ -1,12 +1,17 @@
 
-# 版本号比较
+# 165. 版本号比较
+
+## 1、描述
+输入两个版本号，返回的规则如下
+- 如果 version1 > version2 返回 1，
+- 如果 version1 < version2 返回 -1，
+- 除此之外返回 0。
+
+## 2、实现
+
+将版本以 `.` 进行拆分，之后一个一个比较，长度不一样使用 0 进行补位。
 
 ```js
-/**
- * @param {string} version1
- * @param {string} version2
- * @return {number}
- */
 var compareVersion = function (version1, version2) {
     let vearr1 = version1.split(".")
     let vearr2 = version2.split(".")
@@ -21,4 +26,12 @@ var compareVersion = function (version1, version2) {
     }
 
     return 0
+}
 ```
+
+复杂度
+- 复杂度为 O(max(n,m))
+- 空间复杂度：O(n+m)
+
+链接：https://leetcode-cn.com/problems/compare-version-numbers/
+来源：力扣（LeetCode）

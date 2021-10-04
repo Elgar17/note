@@ -34,8 +34,6 @@
 
 ## 3、实现
 
-
-
 ```javascript
 var getKthFromEnd = function (head, k) {
     let fast = head
@@ -49,3 +47,12 @@ var getKthFromEnd = function (head, k) {
     return slow
 }
 ```
+
+复杂度
+- 时间复杂度：O(n)
+- 空间复杂度：O(1)
+
+
+
+链接：https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/
+来源：力扣（LeetCode）
