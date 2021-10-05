@@ -11,7 +11,8 @@ module.exports = [{
         'effactive-js',
         'debounce-throttle',
         'array-method',
-        'instanceof'
+        'instanceof',
+        'redraw-reflow'
     ],
 }, {
     title: 'Typescript',
