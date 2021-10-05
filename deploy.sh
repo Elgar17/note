@@ -1,6 +1,9 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# 更新状态
+git pull
+
 # 生成静态文件
 npm run docs:build
 
