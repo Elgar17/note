@@ -12,7 +12,9 @@ module.exports = [{
         'debounce-throttle',
         'array-method',
         'instanceof',
-        'redraw-reflow'
+        'redraw-reflow',
+        'curry',
+        'new'
     ],
 }, {
     title: 'Typescript',

@@ -47,7 +47,7 @@ promise.all = Promise.all || function(...pArr){
         var len = 0;
         next();
         function next(){
-            pArr.then((res)=>{
+            pArr[i].then((res)=>{
                 arrResult.push(res);
                 len++;
                 if(len == pArr.length){
