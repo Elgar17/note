@@ -13,7 +13,16 @@
 
 **(1) 递归**
 
-// TODO：用递归实现
+```js
+function coinmin(x) {
+    if(x === 0) return 0
+    let res = 1000
+    if(x >= 2) res = Math.min(coinmin(x - 2) + 1, res)
+    if(x >= 5) res = Math.min(coinmin(x - 5) + 1, res)
+    if(x >= 7) res = Math.min(coinmin(x - 7) + 1, res)
+    return res;
+}
+```
 
 **(2) 非递归**
 
@@ -32,7 +41,7 @@ function coinmin(x) {
 }
 ```
 
-这是一个通用的解法。
+这是一个通用的解法，理解起来可能会难一点。
 ```js 
 function coinChange(x, coins) {
     let f = [0];

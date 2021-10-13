@@ -46,7 +46,7 @@ function Stack() {
 }
 ```
 
-## 
+## 应用
 
 ```js
 var s = new Stack();             // 初始化
