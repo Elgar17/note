@@ -16,9 +16,7 @@ var b bool = true
 
 按照类型分为整型和浮点型。
 
-**（1） 整型**
-
-
+（1） 整型
 
 ```go
 var num int = 16
@@ -29,6 +27,7 @@ var n = 1 // 将 n 自动推导为 int
 ```
 
 int 类型的数据会占用长度不确定，32 为电脑中占 4 字节，64 为电脑中占 8 字节。
+
 ```go
 // 引入多个模块的写法
 import (
@@ -53,6 +52,7 @@ fmt.Println(unsafe.Sizeof(b)) // 4 或 8
 - uint64：无符号整数，一个字节，可存储 0 ~ 2^64 - 1
 
 可以使用 `Sizeof` 方法查看大小。
+
 ```go
 import (
     "fmt"
@@ -69,7 +69,7 @@ fmt.Println("int8:", math.MinInt8, "~", math.MaxInt8)
 var num int8 = 166 // 报错
 ```
 
-**（2）浮点型**
+（2）浮点型
 
 go 语言中没有 `double`，只有 `float`.
 
@@ -81,7 +81,7 @@ var f float32 = 3.14
 var f1 float64 = 3.1415
 ```
 
-**（3）其他类型**
+（3）其他类型
 
 - byte：uint8 类似
 - rune：int32 类似
@@ -89,6 +89,26 @@ var f1 float64 = 3.1415
 - int：与 uint 一样大小
 - uintptr：无符号整型，用于存放一个指针
 
+（3）iota
+
+iota 是 GO 语言中的一个计数器。
+
+```go
+const (
+    n1 = iota // 0
+    n2        // 1
+    n3        // 2
+    n4        // 3
+)
+```
+
+这里会介绍一些常用技巧。
+
+```go
+var i, j int
+i, j = 2, 3
+fmt.Println(i, j) // 2 3
+```
 
 ## 3. 字符串
 
@@ -100,12 +120,12 @@ var s string = "Hello GO!" // 显示定义
 var s = "Hello GO!" // 隐式定义
 ```
 
-
 ## 4. 派生类
 
 由于派生类内容很多，在这里不会详细介绍，之后具体介绍每一数据类型。
 
 包括：
+
 - 指针类型（Pointer）
 - 数组类型
 - 结构化类型（struct）
