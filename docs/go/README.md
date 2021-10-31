@@ -16,7 +16,11 @@ GO 语言开源于 2009 年，为了解决分布式开发服务的问题，很�
 
 ## 开发环境
 
-GO 语言对可发目录有要求，不能在随意的地方开发，安装完成之后，我们需要制定开发目录 `GOPATH`。
+
+
+
+
+
 
 ## 基本结构
 
@@ -44,7 +48,4 @@ go env
 
 # 运行
 go run hello.go
-
-# 解决 vscode 插件报错
-go env -w GOPROXY=https://goproxy.cn,direct
 ```
