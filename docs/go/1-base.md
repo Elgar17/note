@@ -118,6 +118,90 @@ fmt.Println(i, j) // 2 3
 var s string = "Hello GO!" // 显示定义
 // 或
 var s = "Hello GO!" // 隐式定义
+// 或
+s := "Hello GO!" 
+```
+
+原始字符串，有些字符串中包含计算机指令，比如 `\n`，在字符串中有 `\n` 是换行。
+
+```go
+fmt.Println("hello \n GO!")
+```
+显示结果如下， `\n` 换成了换行。
+
+```
+hello 
+ GO!
+```
+ 
+如果我们想显示 `\n` 把字符串使用 `` 括起来，这个叫原始字符串。
+
+```go
+fmt.Println(`hello \n GO!`)
+// hello \n GO!
+```
+
+字符串的每个位置对应一个索引，像数组一样获取每一个字符，打印字符的 ASCII 码。
+
+```go
+s := "hello"
+fmt.Printf("%c", s[1]) // e
+```
+
+
+rune 是 int32 的别名，可以存放 utf-8 中的所有字符,字符串使用单引号（\`） 阔的，默认推断为 `rune` 类型。
+
+```go
+s := 'A' // s 的类型是 rune
+
+s := 'ب'
+fmt.Printf("%c", s) // ب
+```
+
+字符串可以加减操作。
+
+```go
+s := 'a'
+s = s + 1
+fmt.Printf("%c",s) // b
+```
+
+字符串和字符串可以相加，不过多个字符串和数字不能相加。
+
+```go
+s := "hello" + " Go"
+// hello Go
+
+s := "hello" + 10
+// 报错
+```
+
+
+byte 是 int8 的别名.
+
+
+字符串的长度可以使用，内置函数 `len` 来获取。
+
+```go
+s := "hello"
+fmt.Println(len(s)) // 5
+```
+
+需要注意的是 `len` 函数按照字节长度计算的。
+
+```go
+s := "ب"
+fmt.Println(len(s)) // 2
+```
+
+字符串可以用 `range` 进行遍历.
+
+```go
+s := "hello Ǵo"
+for i, c := range s {
+    fmt.Printf("%v %c ", i, c)
+}
+// 0 h 1 e 2 l 3 l 4 o 5   6 Ǵ 8 o
 ```
 
 ## 4. nil
