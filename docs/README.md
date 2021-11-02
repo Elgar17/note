@@ -15,15 +15,18 @@ footer: Elǵar ♥ Baǵjan
 ---
 
 ## 💻 前端
+
 - [HTML && CSS](./html-css/)
 - [JavaScript](./javascript)
 - [Typescript](./javascript/t-install.html)
 
 ## ☕️ 后端
+
 - [Node.js](./node/)
 - [Java](./java/)
 
 ## 🎓 计算机基础
+
 - [Linux 基础](./other/linux.html)
 - [计算机网络](./network/)
 - [算法与数据结构](./alg/)
@@ -35,8 +38,3 @@ footer: Elǵar ♥ Baǵjan
 - [Nginx](./other/nginx.html)
 - [MySQL](./other/mysql.html)
 - [MongoDB](./other/mongodb.html)
-
-
-
-
-
