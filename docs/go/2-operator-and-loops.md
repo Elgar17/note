@@ -48,7 +48,7 @@ for {
 
 不同类型之间不存在自动转换，用户需要自己转换。
 
-（1） int，float 
+（1） int，float
 
 `int` 与 `float` 类型的相互转换转换
 
@@ -70,8 +70,6 @@ fmt.Println(string(s)) // ب
 ```
 
 （3）bool
-
-
 
 ## 4. 练习
 

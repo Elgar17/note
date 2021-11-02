@@ -127,13 +127,14 @@ s := "Hello GO!"
 ```go
 fmt.Println("hello \n GO!")
 ```
+
 显示结果如下， `\n` 换成了换行。
 
-```
+```text
 hello 
  GO!
 ```
- 
+
 如果我们想显示 `\n` 把字符串使用 `` 括起来，这个叫原始字符串。
 
 ```go
@@ -147,7 +148,6 @@ fmt.Println(`hello \n GO!`)
 s := "hello"
 fmt.Printf("%c", s[1]) // e
 ```
-
 
 rune 是 int32 的别名，可以存放 utf-8 中的所有字符,字符串使用单引号（\`） 阔的，默认推断为 `rune` 类型。
 
@@ -176,9 +176,7 @@ s := "hello" + 10
 // 报错
 ```
 
-
 byte 是 int8 的别名.
-
 
 字符串的长度可以使用，内置函数 `len` 来获取。
 
