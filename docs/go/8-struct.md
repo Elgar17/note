@@ -49,6 +49,22 @@ func printStu(s student) {
 }
 ```
 
+## struct 的赋值
+
+struct 结构算是基础类型，我们将一个 struct 赋值给另一个 struct 时，会产生独立的变量，两个 struct 互不影响。
+
+```go
+s1 := student{"Jerry", 15}
+
+s2 := s1
+s1.Name = "Tom"
+
+fmt.Println(s1.Name) // Jerry
+fmt.Println(s2.Name) // Tom
+```
+
+struct 作为函数的参数传入，函数内部获取复制的另一份。
+
 ## struct 转换其他类型
 
 struct 可以转化为其他类型，可以转为以下类型。
@@ -64,14 +80,54 @@ struct 可以转化为其他类型，可以转为以下类型。
 import "encoding/json"
 ```
 
-使用 `json` 中的 `Marshal` 函数完成转换，该函数返回两个变量。
+使用 `json` 中的 `Marshal` 函数完成转换，该函数返回两个变量，第一个是数据，二进制数组，第二个变量是发生的错误，转换成功，返回 `nil`。
 
 ```go
 s1 := student{"Jerry", 15}
-data, e := json.Marshal(s1)
+bytes, e := json.Marshal(s1)
 
 if e == nil {
-    fmt.Println(string(data))
+    fmt.Println(string(bytes))
     // {"name":"Jerry","age":15}
 }
 ```
+
+
+## 方法
+
+方法也是一个函数，跟函数的区别是，方法可以跟结构体关联。
+
+```go
+func (s student) printStu(){
+	fmt.Println(s)
+}
+```
+
+上面实例是给 `student` 结构体绑定了一个方法，`func` 关键字后面填写绑定的结构体。
+
+```go
+s1 := student{"Jerry", 15}
+
+s1.printStu() // {Jerry 15}
+```
+
+使用是结构体 `.` 方法名来访问。
+
+在方法中可以访问结构体的每个成员，下面实例中分别打印了结构体的成员。
+
+```go
+func (s student) printStu(){
+	fmt.Println(s.Name)
+	fmt.Println(s.Age)
+}
+```
+
+方法也可以有参数和返回值，这些跟普通函数一样。
+
+## go 语言中的 class
+
+```go
+
+```
+
+
