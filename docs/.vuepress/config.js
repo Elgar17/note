@@ -2,7 +2,7 @@ const Nav = require("./nav.js")
 const Sidebar = require("./sidebar/index.js")
 
 module.exports = {
-  title: 'E-NOTE ✍',
+  title: '大厂笔记 ✍',
   base: '/docs/',
   head: [
     ['link', {

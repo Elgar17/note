@@ -2,13 +2,12 @@
 
 node 中没有 window 的全局对象，node 中全局的 this 指向 global，global 是一个对象，包含以下模块。
 
+- 打印日志：console
+- 文件路径：dirname、filename
+- 定时器：setTimeout、setInterval
+- 模块化系统：module、exports、require
 
-	- 打印日志：console
-	- 文件路径：dirname、filename
-	- 定时器：setTimeout、setInterval
-	- 模块化系统：module、exports、require
-
-##  1、路径
+## 1、路径
 
 在不同环境中,文件的路径表示都不同（windows与linux）。
 
@@ -32,10 +31,10 @@ Event loop 也叫事件循环，Node.js 是基于 chrome V8 引擎开发的的�
 
 建议先了解浏览器的时间循环机制（Event loop），要知道这些函数的执行循序。
 
-	- setTimeout
-	- setImmediate
-	- process.nextTick
-	- Promise
+- setTimeout
+- setImmediate
+- process.nextTick
+- Promise
 
 比如要知道下面例子的执行循序。
 
@@ -105,6 +104,6 @@ module.exports = {
 // b.js文件
 const {add,mul} = require('./a.js')
 
-const sum = add(5,6)	// 10
-const m = add(5,6)		// 30
+const sum = add(5,6) // 10
+const m = add(5,6) // 30
 ```

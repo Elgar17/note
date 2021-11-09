@@ -13,13 +13,13 @@ chunk([1, 2, 3, 4, 5, 6, 7], 3)
 
 ```js
 function chunk(arr,size){
-	if(arr.length <= 0 || size <= 0){
-		return arr
-	}
-	let item = [];
-	for(let i = 0; i < arr.length; i += size){
-		item.push(arr.slice(i,i + size));
-	}
-	return item;
+    if(arr.length <= 0 || size <= 0){
+        return arr
+    }
+    let item = [];
+    for(let i = 0; i < arr.length; i += size){
+        item.push(arr.slice(i,i + size))
+    }
+    return item;
 }
 ```

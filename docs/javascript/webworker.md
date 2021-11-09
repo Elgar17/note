@@ -1,15 +1,14 @@
-## Web Worker 使用教程
+# Web Worker 使用教程
 
 ![worker](worker.jpg)
 
 JavaScript 是一个单线程语言，这会导致一个问题，当一个页面中有大量的数据，需要计算这些数据时，占用当前的线程，这时候用户点击网页，页面的交互会变得更慢了。
 
-
 我在实际项目中遇到的一个问题，当时做了一个数据展示的页面，频繁地渲染页面，每次有几千条数据。
 
 上面例子中，如果我们有两个线程就好了，一个线程负责计算数据，一个线程负责展示数据和页面的交互逻辑。
 
-## 1、介绍
+## 1. 介绍
 
 那么什么是 `Web Worker` 呢？
 
@@ -24,7 +23,7 @@ JavaScript 是一个单线程语言，这会导致一个问题，当一个页面
 
   
 
-## 2、快速开始
+## 2. 快速开始
 
 demo 目录如下
 
@@ -62,11 +61,7 @@ worker.terminate();
 
 ```
 
-  
-
 在新线程中也做四件事：
-
-  
 
 1. 接受主线程发来的数据
 
@@ -76,7 +71,6 @@ worker.terminate();
 
 4. 关闭线程
 
-  
 
 ```JS
 // worker.js 文件
@@ -96,21 +90,15 @@ self.onmessage = function (e) {
 
 ```
 
-  
-
-## 3、 更多 API
-
-  
+## 3. 更多 API
 
 在主线程中是一个 Worker 的构造函数，有以方法和下属性。
-
 
 ```js
 const  worker = new  new  Worker("worker.js", { name:  "worker1" })();
 ```
 
-
-```
+```text
 worker.onerror: 错误监听方法
 
 worker.onmessage: 监听 worker 线程发来的数据， 数据在 Event.data 中
@@ -122,7 +110,7 @@ worker.terminate()：销毁 worker 线程
 
 在 worker 线程中有一下方法和属性
 
-```
+```text
 this.name : 属性，线程名字，主线中定义
 
 this.onmessage: 函数，监听主线程发来的数据
@@ -132,7 +120,7 @@ self.postMessage(): 方法，向主线程发送数据
 self.close(): 方法，关闭线程
 ```
 
-## 4、注意事项
+## 4. 注意事项
 
 （1）不共享地址
 
@@ -154,8 +142,6 @@ self.onmessage = function (e) {
 };
 
 ```
-
-  
 
 （2）新线程中，没有 window 对象
 

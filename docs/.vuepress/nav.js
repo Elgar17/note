@@ -42,7 +42,7 @@ module.exports = [ //导航栏
         ]
     },
     {
-        text: '周围技术',
+        text: '网络与算法',
     //     ariLabel: '/network/',
         items: [ //多级导航栏
             {

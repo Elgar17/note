@@ -6,8 +6,6 @@
 - history对象
 - navigetor对象
 
-
-
 ## 1、 location 对象
 
 当前浏览器的url为 https://blog.harahozi.cn/docs/javascript/bom.html#_1%E3%80%81-location-%E5%AF%B9%E8%B1%A1

@@ -6,7 +6,4 @@ javascript 中的
 
 ## 作用域
 
-
-
 ## this 指向
-

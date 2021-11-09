@@ -25,5 +25,5 @@ var lengthOfLongestSubstring = function (s) {
         }
     }
     return max
-};
+}
 ```
