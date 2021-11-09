@@ -149,7 +149,29 @@ one, two := plus_one(2, 3)
 
 这里使用两个变量接受了函数返回的两个变量。
 
-## 4. defer
+## 4. 立即执行函数
+
+立即执行函数是，声明函数同时执行，因为没有函数名，也叫匿名函数。
+
+```go
+func main() {
+	func(){
+		fmt.Println("hi") // hi
+	}()
+}
+```
+
+也可以传入参数
+
+```go
+func main() {
+	func(i int){
+		fmt.Println(i) // 1
+	}(1)
+}
+```
+
+## 5. defer
 
 defer 在英文叫延迟的意思，功能是让函数延迟执行。
 
