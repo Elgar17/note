@@ -1,11 +1,8 @@
 # javascript中的 in 和 of 的区别
 
-
-
-## 1、for...in
+## 1. for...in
 
 使用 `for...in` 可以遍历数组和对象。
-
 
 ```js
  for...in
@@ -39,8 +36,7 @@ for(let key in obj){
 }
 ```
 
-
-## 2、for...of
+## 2. for...of
 
 使用 for...of 可以遍历数组
 

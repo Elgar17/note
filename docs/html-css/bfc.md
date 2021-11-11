@@ -10,9 +10,7 @@ BFC 可以理解成一个与外界隔离的容器。
 
 默认情况下，每个盒子都不存在这个现象。
 
-
-
-## 1、触发条件
+## 1. 触发条件
 
 给盒子设置这些属性之后，盒子具有 BFC 特性。
 
@@ -20,7 +18,7 @@ BFC 可以理解成一个与外界隔离的容器。
 
 2. 浮动元素：`float` 属性为`none` 之外
 
-3. 绝对定位：` pisition`  | `absolute` | `fixed`
+3. 绝对定位：`pisition`  | `absolute` | `fixed`
 
 4. `diplay` 属性为  `inline-block` 等
 
@@ -28,13 +26,11 @@ BFC 可以理解成一个与外界隔离的容器。
 
 这些事常见的触发条件。
 
-
-## 2、应用
+## 2. 应用
 
 我们利用盒子的这些特性可以解决以下几个问题。
 
-
-**（1）解决外边距合并问题**
+（1）解决外边距合并问题
 
 ![margin-bfc](margin-bfc.png)
 
@@ -49,8 +45,7 @@ BFC 可以理解成一个与外界隔离的容器。
 overflow: hidden;
 ```
 
-
-**（2）解决清除浮动**
+（2）解决清除浮动
 
 ![bfc](margin-ta.png)
 
@@ -64,7 +59,7 @@ overflow: hidden;
 position: relative;
 ```
 
-**（3）阻止常规流元素被浮动元素覆盖**
+（3）阻止常规流元素被浮动元素覆盖
 
 ![liu](liu.png)
 
@@ -77,7 +72,3 @@ position: relative;
 ```css
 overflow: hidden;
 ```
-
-
-
-

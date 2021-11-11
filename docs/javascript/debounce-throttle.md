@@ -1,6 +1,6 @@
 # js 防抖节流函数
 
-## 1、防抖
+## 1. 防抖
 
 防止一个函数在短时间内多次触发。如果在短时间多次触发，只执行一次。
 
@@ -8,53 +8,35 @@
 
 还有那些地方用到防抖？ 鼠标移动，页面滚动等
 
-
-
- 极简版：
+极简版：
 
 ```javascript
 const debounce = (func, wait)=>{
-    let time;
+    let time
     return ()=>{
-    	if(time) cleartTimeout(time);
-        time = setTimeout(func, wait);
-    }
-}
-```
-
-```js
-const dbounce = (func, wait)=>{
-    let time;
-    return ()=>{
-        if(time) clearsetTimeout(time);
+        if(time) cleartTimeout(time)
         time = setTimeout(func, wait)
     }
 }
 ```
 
-
-
-
-
 带参数版本：
 
 ```js
 function debounce(func,wait){
-    var time;
+    var time
     return ()=>{
         // 如果定时器存在，需要清除定时器，重新定义
-        if(time) clearTimeout(time);	
-		time = setTimeou(()={
-            func.apply(this,arguments);
-        	time = null
+        if(time) clearTimeout(time)
+        time = setTimeou(()={
+            func.apply(this,arguments)
+            time = null
         },wait)
     }
 }
 ```
 
-
-
-## 2、节流
+## 2. 节流
 
 防止一个函数在短时间内多次触发。如果在短时间多次触发，指定时间内触发多次。
 
@@ -62,29 +44,25 @@ function debounce(func,wait){
 
 ```js
 const throttle = (func,wait)=>{
-    let time;
+    let time
     return ()=>{
-        if(!time) time = setTimeout(func,wait);
+        if(!time) time = setTimeout(func,wait)
     }
 }
 ```
-
 
 带参数版本：
 
 ```js
 function throttle(func,wait){
-    let time;
+    let time
     return ()=>{
         if(!time){
            time = setTimeout(()=>{
-               clearTimeout(time);
+               clearTimeout(time)
                func.apply(this,arguments)
            }) 
         }
     }
 }
 ```
-
-
-

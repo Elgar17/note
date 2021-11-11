@@ -8,7 +8,7 @@
 
 ## 1、 location 对象
 
-当前浏览器的url为 https://blog.harahozi.cn/docs/javascript/bom.html#_1%E3%80%81-location-%E5%AF%B9%E8%B1%A1
+当前浏览器的url为 "https://blog.harahozi.cn/docs/javascript/bom.html#_1%E3%80%81-location-%E5%AF%B9%E8%B1%A1"
 
 ```js
 location.href
@@ -28,10 +28,9 @@ location.hash
 // "#_1%E3%80%81-location-%E5%AF%B9%E8%B1%A1"
 ```
 
+## 2. history
 
-
-## 2、history
-缓存用户预览的网页记录
+history 对，缓存了用户预览的网页记录
 
 ```js
 history.go(n)
@@ -44,8 +43,6 @@ history.forword()
 // 前进
 ```
 
-
-
-## 3、navigetor对象
+## 3. navigetor对象
 
 Navigator 包含有关浏览器的信息。

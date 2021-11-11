@@ -1,8 +1,6 @@
 # promise
 
-
-
-
+## 1. 概述
 
 promise 是解决回调地狱的函数。
 
@@ -32,10 +30,8 @@ p.then(()=>{
 })
 ```
 
+## 2. promise.all
 
-
-
-## 1、promise.all
 promise.all方法返回一个promise。需要传入几个promise，在then中获取到传入 promise 全部返回的结果。
 
 promise all 是面试中经常被问到的题，也需要我们手写出来。
@@ -61,21 +57,16 @@ promise.all = Promise.all || function(...pArr){
 }
 ```
 
-
-
-## 2、promise rase
-
-
+## 3. promise rase
 
 ```js
 function myPrase(...pArr){
     return new Promise((resove,reject)=>{
-    	for(var i = 0; i < pArr.length;  i++){
-        	pArr.then(res=>{
+        for(var i = 0; i < pArr.length;  i++){
+            pArr.then(res=>{
                 resove(res)
             })
-    	}  
+        }  
     })
 }
 ```
-

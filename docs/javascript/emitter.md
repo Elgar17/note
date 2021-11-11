@@ -4,8 +4,6 @@
 
 了解源码之前需要知道 javascript 设计模式。
 
-
-
 ## 1、发布订阅模式
 
 发布订阅模式叫观察者模式。
@@ -14,11 +12,11 @@
 
 实际应用有 Vue 中的 `$on` 和 `$emit` 方法。
 
-**（1）介绍**
+（1）介绍
 
 这样说可能难理解，简单的说，写一个构造函数，像这样：
 
-```
+```js
 function EventEmitter(){
 }
 ```
@@ -65,11 +63,9 @@ emitter.on("sayHi", function(data){
 emitter.emit("sayHi","Hi") // 执行sayHi函数，应该打印 Hi
 ```
 
-
-
 这个就是大概的流程，下面我们开始实现。
 
-**（2）实现**
+（2）实现
 
 我们看到，在 on 里有一个回调函数，在emit 的时候执行，所以我们在构造函数中添加一个对象，保存这些函数。
 
@@ -110,6 +106,7 @@ EventEmitter.prototype.emit = function (name, ...args) {
     return true;
 }
 ```
+
 还有一个 `off` 方法，取消订阅。
 
 ```js
@@ -154,8 +151,6 @@ emitter.emit("sayHi", "订阅者")
 // 订阅者 user2
 ```
 
-
-
 用 class 语法重写了一下完整的。
 
 ```js
@@ -196,15 +191,10 @@ class EventEmitter {
 }
 ```
 
-
-
-## 2、单列模式
+<!-- ## 2、单列模式
 
 单例模式的核心是：**确保只有一个实例，并且提供全局访问**。
 
-
-
 ```js
 class 
-```
-
+``` -->
