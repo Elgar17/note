@@ -9,10 +9,6 @@ Event loop 也叫事件循环，Node.js 是基于 chrome V8 引擎的所以，No
 - process.nextTick
 - Promise
 
-
-
-
-
 比如要知道下面例子的执行循序
 
 ```js
@@ -46,4 +42,3 @@ console.log('开始')
 // 定时器
 // 这是 setImmediate
 ```
-

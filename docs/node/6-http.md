@@ -1,6 +1,4 @@
-# http模块
-
-
+# http 模块
 
 http模块是 node 自带的所以我们为您不需要下载其他依赖，直接是要弄即可。
 
@@ -17,9 +15,10 @@ const server = http.createServer((req,res)=>{
 server.listen(8000)
 ```
 
-访问 http://localhost:8000/ 可以获得 hello 的字符串。
+访问 [http://localhost:8000](http://localhost:8000/) 可以获得 hello 的字符串。
 
-## 1、get 请求
+## 1. get 请求
+
 当服务端发来请求以后，我们可通过 req 来获取具体的请求内容。
 
 req 有以下常用属性：
@@ -46,9 +45,8 @@ const server = http.createServer((req,res)=>{
 server.listen(8000)
 ```
 
+## 2. post 请求
 
-
-## 2、post 请求
 ```js
 const server = http.createServer((req, res) => {
     if (req.method == 'POST') {
@@ -69,9 +67,8 @@ const server = http.createServer((req, res) => {
 })
 ```
 
+## 3. 路由的处理
 
-
-## 3、路由的处理
 ```js
 const server = http.createServer((req, res) => {
     var path = req.url.split("?")[0];
@@ -79,9 +76,8 @@ const server = http.createServer((req, res) => {
 })
 ```
 
+## 4. querystring 模块
 
-
-## 4、querystring 模块
 这里会使用一个 querystring 的模块来处理 get 请求的参数。
 
 querystring.parse(str)方法
@@ -95,4 +91,3 @@ const querystring = require('querystring')
 console.log(querystring.parse('name=tom&age=18'))
 // 返回对象： {name: "tom", age: '18'}
 ```
-

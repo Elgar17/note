@@ -1,4 +1,4 @@
-## websocket 入门
+# websocket 入门
 
 本文内容：
 
@@ -8,14 +8,14 @@
 
 ![web](web1.png)
 
-## 1、H5 使用 websocket 通信
+## 1. H5 使用 websocket 通信
 
 websocket 是基于 TCP 的一种网络协议，可以实现全双工通信，也就是说，服务器可以给用户主动发送消息，这是 http 协议做不到的。
 http 请求只能用户可以发送，服务器做相应。所以在实时通信领域 websovket 比较占优势，比如聊天等。
 
 ![web](http.png)
 
-**（1）创建服务**
+（1）创建服务
 
 H5 已经提供websocket服务了，这样我们就可以使用。这个地址是一个开放的地址，你给它发送什么它会给你回复，你发送的数据。
 
@@ -25,7 +25,7 @@ var socket = new WebSocket('ws://echo.websocket.org')
 // 参数1：连接服务的地址
 ```
 
-**（2）发送数据和处理数据**
+（2）发送数据和处理数据
 
 我们创建完服务之后如何知道连接成功了呢？ 给我们提供了一个 open 事件，连接成功时会触发这个给事件。
 
@@ -35,7 +35,6 @@ socket.addEventListener('open',function(){
     console.log("连接成功")
 })
 ```
-
 
 以下是常用事件，用法都一样这里不再讲解，可参考上面的逻辑：
 
@@ -72,8 +71,6 @@ socket.addEventListener('message',function(e){
 })
 ```
 
-
-
 常用方法：
 
 | 方法           | 描述     |
@@ -81,7 +78,7 @@ socket.addEventListener('message',function(e){
 | Socket.send()  | 发送数据 |
 | Socket.close() | 关闭连接 |
 
-## 2、Node.js 创建 websocket 服务
+## 2. Node.js 创建 websocket 服务
 
 这里使用了一个 [nodejs-websocket](https://github.com/sitegui/nodejs-websocket) 的依赖包来开发的服务。
 
@@ -112,12 +109,12 @@ var server = ws.createServer(function (conn) {
 
 
     // 监听用户发来的数据
-	conn.on("text", function (str) {
+    conn.on("text", function (str) {
         conn.sendText(str.toUpperCase()+"!!!")
         // 处理用户发来的数据
     })
     // 监听用户断开后关闭服务
-	conn.on("close", function (code, reason) {
+    conn.on("close", function (code, reason) {
         console.log("Connection closed")
     })
     
@@ -128,11 +125,11 @@ var server = ws.createServer(function (conn) {
 })
 ```
 
-## 3、实现基于 websovket 的聊天室
+## 3. 实现基于 websovket 的聊天室
 
 服务端：
 
-```js   
+```js
 var ws = require("nodejs-websocket")
 var PORT = 3000;
 
@@ -142,40 +139,40 @@ var userCount = 0;
 // Scream server example: "hi" -> "HI!!!"
 var server = ws.createServer((conn) => {
 
-	// 每一个用户进来都会触发，所以用户数量+1
-	userCount++;
+    // 每一个用户进来都会触发，所以用户数量+1
+    userCount++;
 
-	// 设置用户名
-	conn.username = `用户${userCount}`
+    // 设置用户名
+    conn.username = `用户${userCount}`
 
-	// 发送进入广播
-	radio(`${conn.username}进入了聊天室`)
+    // 发送进入广播
+    radio(`${conn.username}进入了聊天室`)
 
-	conn.on("text", function (msg) {
-		radio(`${conn.username}：${msg} ---${new Date().toString().split('').slice(16,24).join('')}`)
-	})
+    conn.on("text", function (msg) {
+        radio(`${conn.username}：${msg} ---${new Date().toString().split('').slice(16,24).join('')}`)
+    })
 
-	conn.on("close", () => {
-		console.log("Connection closed")
-		userCount--
-		radio(`${conn.username}退出了聊天室`)
-	})
+    conn.on("close", () => {
+        console.log("Connection closed")
+        userCount--
+        radio(`${conn.username}退出了聊天室`)
+    })
 
-	// 处理用户错误信息
-	conn.on('error', () => {
-		console.log('用户来接异常')
-	})
+    // 处理用户错误信息
+    conn.on('error', () => {
+        console.log('用户来接异常')
+    })
 })
 
 function radio(mess) {
-	// connections 是一个数组，保存了当前连接的所有用户		
-	server.connections.forEach(user => {
-		user.sendText(mess)
-	})
+    // connections 是一个数组，保存了当前连接的所有用户		
+    server.connections.forEach(user => {
+        user.sendText(mess)
+    })
 }
 
 server.listen(PORT, () => {
-	console.log("服务启动成功")
+    console.log("服务启动成功")
 })
 ```
 
@@ -221,4 +218,3 @@ server.listen(PORT, () => {
 </body>
 </html>
 ```
-

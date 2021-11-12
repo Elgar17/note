@@ -1,12 +1,12 @@
 # 安装
 
-### Node是什么？
+## Node 是什么？
 
 Node.js 是可以运行 JavaScript 语言环境。
 
 ![Node,浏览器](node-browser.png)
 
-### 有什么用？
+## 有什么用？
 
 Node.js 可以**读写文件**、可以发送**网络请求**、操作**数据库**、**摄像头**等等。
 
@@ -14,7 +14,7 @@ Node.js 可以**读写文件**、可以发送**网络请求**、操作**数据�
 
 举个例子 vscode 编辑器是用 Electron 写的。
 
-### 运行第一个 Node 程序
+## 运行第一个 Node 程序
 
 使用之前我们需要安装 Node.js 运行的环境[下载](http://nodejs.cn/download/)
 

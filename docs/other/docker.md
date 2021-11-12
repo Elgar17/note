@@ -6,9 +6,9 @@
 
 ![docker教程](docker.png)
 
-官方文档：https://docs.docker.com/
+官方文档：[https://docs.docker.com/](https://docs.docker.com/)
 
-镜像下载网站：https://hub.docker.com/
+镜像下载网站：[https://hub.docker.com/](https://hub.docker.com/)
 
 **docker 能做什么？**
 
@@ -16,7 +16,7 @@
 - 变更管理、日志记录
 - 写时复制
 
-## 1、基本组成
+## 1. 基本组成
 
 （1）image（镜像）
 
@@ -30,7 +30,7 @@ mysql 安装包相当于一个镜像，还可以安装一个 Linux 系统。
 
 存放镜像文件，分为私有和共有，docker hub 等。
 
-## 2、linux 安装 docker
+## 2. linux 安装 docker
 
 环境：CentOS 7 Linux
 
@@ -75,8 +75,8 @@ sudo yum install -y yum-utils
 # 4、设置阿里云镜像源
 yum-config-manager \
     --add-repo \
-	http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-	
+  http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+
 # 5、安装 docker
 yum install docker-ce docker-ce-cli containerd.io
 
@@ -102,8 +102,6 @@ systemctl status docker
            └─17592 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
 ```
 
-
-
 配置镜像加速，打开下面的文件，如果没有创建文件：
 
 ```bash
@@ -112,6 +110,7 @@ vi /etc/docker/daemon.json
 ```
 
 填写一些内容
+
 ```bash
 {
     "registry-mirrors" : [
@@ -125,11 +124,7 @@ vi /etc/docker/daemon.json
 systemctl restart docker.service
 ```
 
-
-
-
-
-## 3、镜像命令
+## 3. 镜像命令
 
 官方给了一个 `hello-wrld` 镜像，通过下面的名来安装 `hello-world` 镜像：
 
@@ -143,19 +138,17 @@ docker run hello-world
 
 那么我们怎么查看我们安装的镜像呢？
 
-```bash	
+```bash
 # 查看本地安装的镜像文件
 docker images
 ```
 
 以下的我们安装完 `hello-world` 后，查询镜像的结果，会显示包名，ID，大小等信息。
 
-```
+```text
 REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
 hello-world   latest    bf756fb1ae65   13 months ago   13.3kB
 ```
-
-
 
 我们也可以先下载镜像，之后在使用：
 
@@ -176,13 +169,9 @@ docker rmi -f [id]
 docker rmi -f $(docker images -aq)
 ```
 
+## 4. 容器命令
 
-
-
-
-## 4、容器命令
-
-**（1）启动，停止，运行命令：**
+（1）启动/停止/运行
 
 ```bash
 # docker run [可选参数] [镜像名]
@@ -211,15 +200,13 @@ docker start [容器id]
 docker restart [容器id] 
 ```
 
-
-
-**（2）查看当前运行的容器：**
+（2）查看当前运行的容器：
 
 ```bash
 docker ps
 ```
 
-**（3）删除容器**
+（3）删除容器
 
 容器和镜像的概念一定要分清楚，一个容器就是运行的一个服务，一个镜像可以运行多个容器。比如安装一个 mysql 镜像，可以启动两个 mysql 容器，两个单独运行。
 

@@ -7,7 +7,7 @@ node 中没有 window 的全局对象，node 中全局的 this 指向 global，g
 - 定时器：setTimeout、setInterval
 - 模块化系统：module、exports、require
 
-## 1、路径
+## 1. 路径
 
 在不同环境中,文件的路径表示都不同（windows与linux）。
 
@@ -25,7 +25,7 @@ console.log(__filename)
 
 ![node-path](node-path.gif)
 
-## 2、Event loop
+## 2. Event loop
 
 Event loop 也叫事件循环，Node.js 是基于 chrome V8 引擎开发的的，所以 Node.js 也是单线程的，不过事件循环跟浏览器有一点差别。
 
@@ -73,11 +73,11 @@ console.log('开始')
 
 ![Event loop](node-loop.gif)
 
-## 3、模块化系统
+## 3. 模块化系统
 
 模块化是指将一个很多的代码拆分成多多个模块。
 
-![](require.png)
+![modle](require.png)
 
 图中第一句是在文件 `app.js`中引入 `a.js`的文件，用 `add` 变量来接受。
 

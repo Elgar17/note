@@ -2,13 +2,11 @@
 
 详细介绍 `GET` `POST` 请求。
 
-## 1、概述
+## 1. 概述
 
 HTTP 中的 GET 请求和 POST 请求时最为常用的方法，在使用上和发送请求的过程中有一些差别，下面结合实例，进行
 
-## 2、GET
-
-
+## 2. GET
 
 ```HTTP
 GET /login?name=Tom HTTP/1.1
@@ -17,9 +15,7 @@ Host: localhost:3000
 Connection: keep-alive
 ```
 
-
-## 3、POST
-
+## 3. POST
 
 ```HTTP
 POST /login? HTTP/1.1
@@ -37,7 +33,7 @@ Content-Length: 23
 }
 ```
 
-## 4、区别
+## 4. 区别
 
 GET 请求和 POST 请求的有一下
 
@@ -48,12 +44,16 @@ GET 请求和 POST 请求的有一下
  浏览器回退时，`GET` 请求是无害的，而 `POST` 会再次提交请求。
 
 （3）POST 书签不可加到书签
-- `GET` 请求可以添加到书签，而`POST`不可以，由于 `POST` 请求的参数存放在 `body` 中，不能存放参数。
+
+`GET` 请求可以添加到书签，而`POST`不可以，由于 `POST` 请求的参数存放在 `body` 中，不能存放参数。
 
 （4）编码格式
+
 对参数的数据类型，GET只接受ASCII字符，而POST没有限制。
-`GET` 请求只能进行 `url` 编码，而 `POST `支持多种编码方式。
+`GET` 请求只能进行 `url` 编码，而 `POST` 支持多种编码方式。
 
 （5）请求次数
-- GET 产生一个 TCP 数据包，POST 产生两个 TCP 数据包。
- GET 请求的参数在URL 中，没有 Body，一次能发送出去，对于POST，浏览器先发送 header ，服务器响应100 continue，在发送参数。
+
+GET 产生一个 TCP 数据包，POST 产生两个 TCP 数据包。
+
+GET 请求的参数在URL 中，没有 Body，一次能发送出去，对于POST，浏览器先发送 header ，服务器响应100 continue，在发送参数。
