@@ -16,29 +16,23 @@
 - 变更管理、日志记录
 - 写时复制
 
-
-
 ## 1、基本组成
 
-**（1）、image（镜像）**
+（1）image（镜像）
 
 mysql 安装包相当于一个镜像，还可以安装一个 Linux 系统。
 
-**（2）、container（容器）**
+（2）container（容器）
 
 通过镜像运行的服务，一个镜像可以运行**多个服务**。
 
-**（3）、repository（仓库）**
+（3）repository（仓库）
 
 存放镜像文件，分为私有和共有，docker hub 等。
 
 ## 2、linux 安装 docker
 
-环境：CentOS 7 Linux 
-
-
-
-
+环境：CentOS 7 Linux
 
 一键安装，这是官方提供的脚本，第一行命令是，当前文件夹下载脚本，第二行是运行。
 

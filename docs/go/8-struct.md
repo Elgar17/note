@@ -6,8 +6,8 @@
 
 ```go
 type student struct {
-	name string
-	age int
+    name string
+    age int
 }
 ```
 
@@ -35,8 +35,8 @@ fmt.Println(s1)
 
 ```go
 func printStu(s student) {
-	fmt.Println(s.name)
-	fmt.Println(s.age)
+    fmt.Println(s.name)
+    fmt.Println(s.age)
 }
 ```
 
@@ -44,12 +44,12 @@ func printStu(s student) {
 
 ```go
 func printStu(s student) {
-	fmt.Println(s.name)
-	fmt.Println(s.age)
+    fmt.Println(s.name)
+    fmt.Println(s.age)
 }
 ```
 
-## struct 的赋值
+## struct 的复制
 
 struct 结构算是基础类型，我们将一个 struct 赋值给另一个 struct 时，会产生独立的变量，两个 struct 互不影响。
 
@@ -64,6 +64,10 @@ fmt.Println(s2.Name) // Tom
 ```
 
 struct 作为函数的参数传入，函数内部获取复制的另一份。
+
+## struct 指针
+
+## struct 的嵌套
 
 ## struct 转换其他类型
 
@@ -92,14 +96,13 @@ if e == nil {
 }
 ```
 
-
 ## 方法
 
 方法也是一个函数，跟函数的区别是，方法可以跟结构体关联。
 
 ```go
 func (s student) printStu(){
-	fmt.Println(s)
+    fmt.Println(s)
 }
 ```
 
@@ -117,8 +120,8 @@ s1.printStu() // {Jerry 15}
 
 ```go
 func (s student) printStu(){
-	fmt.Println(s.Name)
-	fmt.Println(s.Age)
+    fmt.Println(s.Name)
+    fmt.Println(s.Age)
 }
 ```
 
@@ -129,5 +132,3 @@ func (s student) printStu(){
 ```go
 
 ```
-
-
