@@ -1,15 +1,36 @@
 # 简介
 
-基于 Vuepress 的共享笔记，欢迎大家一起完善！
+## 概述
 
-笔记包含笔者的大部分笔记，笔者通过这笔记也成功进入了大厂，也祝愿各位早日拿到大厂的offer。
+个人的技术博客，博客[地址](https://blog.harahozi.cn/docs/)。
 
-在线网址：[点击查看](https://blog.harahozi.cn/docs/)
+## 目录
 
-笔记包含以下内容：
+（1）算法与数据结构（JavaScript实现）
 
-- 🍉 前端必会的算法与数据结构
-- 💻 前端：JavaScript，Vue
-- ☕️ 后端：java，Node.js
-- 📊 数据库： MYSQL，MongoDB
-- 🎓 运维：docker，nginx
+- [🍉 算法](https://blog.harahozi.cn/docs/alg/binary-search.html)
+- [📈 数据结构](https://blog.harahozi.cn/docs/alg/)
+
+（2）前端
+
+- [🎨 HTML、CSS](https://blog.harahozi.cn/docs/html-css/)
+- [🥕 JavaScript、TypeScript](https://blog.harahozi.cn/docs/javascript/)
+- [🧮 Vue.js](https://blog.harahozi.cn/docs/vue/)
+
+（3）后端
+
+- [🐹 Golang](https://blog.harahozi.cn/docs/node/)
+- [🕸 Node.js](https://blog.harahozi.cn/docs/node/)
+- [🐸 Java](https://blog.harahozi.cn/docs/java/)
+
+（4）其他
+
+- [🐋 Docker](https://blog.harahozi.cn/docs/other/docker.html)
+- [📊 MYSQL](https://blog.harahozi.cn/docs/other/mysql.html)
+- [🥭 MongoDB](https://blog.harahozi.cn/docs/other/mongodb.html)
+- [🧩 Nginx](https://blog.harahozi.cn/docs/other/nginx.html)
+- [⌨️ Redis](https://blog.harahozi.cn/docs/other/redis.html)
+
+## 说明
+
+如果语言过程中发现错误，欢迎提交 isuue 或 pr。

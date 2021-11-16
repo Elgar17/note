@@ -13,10 +13,10 @@
 request 也叫请求，浏览器向服务器发送的消息，浏览器想获取一个数据，会向服务其发送一个请求。
 
 ```go
-    http.HandleFunc("/", func(w http.ResponseWriter,r *http.Request){
-        w.Write([]byte("hello go"))
-    })
-    http.ListenAndServe("localhost:8080",nil)
+http.HandleFunc("/", func(w http.ResponseWriter,r *http.Request){
+    w.Write([]byte("hello go"))
+})
+http.ListenAndServe("localhost:8080",nil)
 ```
 
 上面的例子是之前介绍过的，下面我们具体分析， `HandleFunc` 方法有两个参数，第一个参数是响应（responce），第二个参数是请求（request），下面介绍请求中的结构体的各项。
