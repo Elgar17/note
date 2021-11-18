@@ -2,7 +2,7 @@ const Nav = require("./nav.js")
 const Sidebar = require("./sidebar/index.js")
 
 module.exports = {
-  title: '大厂笔记 ✍',
+  title: '前端到全栈',
   base: '/docs/',
   head: [
     ['link', {
@@ -29,7 +29,7 @@ module.exports = {
       })();`
     ]
   ],
-  description: '前端笔记', //描述
+  description: '前端到全栈的笔记', //描述
   dest: './dist', // 设置输出目录
   port: 2233, //端口
 

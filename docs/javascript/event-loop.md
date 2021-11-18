@@ -38,7 +38,7 @@ console.log('3');
 
 事件循环有三部分组成：
 
-- 调用栈(call Stack)
+- 调用栈（Call Stack）
 - 消息队列(Message Queue)
 - 微任务队列(Microtack Queue)
 
@@ -46,7 +46,7 @@ console.log('3');
 
 ## 1. 调用栈
 
-也叫call Stack。普通函数执行时先放入**调用栈**中按**顺序**执行并立即释放。
+也叫 Call Stack。普通函数执行时先放入**调用栈**中按**顺序**执行并立即释放。
 
 ```js
 function foo1(){
@@ -70,15 +70,17 @@ foo()
 
 ## 2. 消息队列
 
-也叫Message Queue。宏任务（setTimeout，setInteval，xhr…）执行时放入**消息队列中**，执行完调用栈中的任务后执行。
+也叫 Message Queue，这些事件放入消息队列 setTimeout，setInteval，xhr等，执行时放入**消息队列中**，执行完调用栈中的任务后执行消息队列中的函数。
 
 再看下面的例子：
 
 ```js
-console.log("00");
+console.log("00")
+
 setTimeout(() => {
     console.log("11")
-}, 0);
+}, 0)
+
 console.log("22")
 ```
 
@@ -102,15 +104,18 @@ console.log("22")
 我们在做一道题：
 
 ```js
-console.log("00");
+console.log("00")
+
 function foo() {
-    console.log("11");
+    console.log("11")
     setTimeout(() => {
         console.log("22")
-    }, 0);
+    }, 0)
     console.log("33")
 }
-foo();
+
+foo()
+
 console.log("44")
 ```
 
@@ -126,23 +131,23 @@ console.log("44")
 
 不了解 promise，先看一下[这篇](./promise.md)。
 
-微任务先放入到**微任务队**列中，调用栈清空后**立即被执行**。
+在 JavaScript 执行过程中，如果遇到微任务先放入到微任务队列中，如果遇到宏任务放到消息队列中，调用栈清空后立执行微任务队中的内容，最后执行消息队列中的内容。
 
 ![循序](order.png)
 
-看下面这个例子
+结合这张图，看下面这个例子。
 
 ```js
 console.log("00")
 
 setTimeout(() => {
     console.log(11)
-}, 0);
+}, 0)
 
 var p = new Promise(resolve => {
-    console.log(33); 
-    resolve(44);
-});
+    console.log(33)
+    resolve(44)
+})
 
 p.then(res=>{
     console.log(res)
@@ -162,3 +167,5 @@ console.log(55)
 44
 11
 ```
+
+这就是 JavaScript 中的完整的一次事件循环，事件循环在面试中经常被问到，了解事件循环有利于写出更好的程序，这些例题来自有些来自于作者在面试过程中遇到的题。

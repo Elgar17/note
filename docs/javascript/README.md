@@ -16,13 +16,13 @@
 （2）学习篇
 
 1. [判断数据类型](./data-type.md)
+1. [javascript事件循环（Event loop）](./event-loop.md)
+1. [异步函数 promise](./promise.md)
+1. [浏览器重回与回流](./redraw-reflow.md)
 1. [for...in 与 for...Of](./inAndOf.md)
 1. [JS BOM（浏览器对象模型）](./bom.md)
 1. [如何编写高质量 JavaScript 代码](./effactive-js.md)
 1. [实现数组的常用方法](./array-method.md)
-1. [浏览器重回与回流](./redraw-reflow.md)
-1. [javascript事件循环（Event loop）](./event-loop.md)
-1. [异步函数 promise](./promise.md)
 1. [多行程 Web Worker 教程](./webworker.md)
 
 ## 2. Typescript

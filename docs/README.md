@@ -11,10 +11,41 @@ features:
 - title: 坚持
   details: 伟大的作品，不是靠力量而是靠坚持才完成的。
   
-footer: Elǵar ♥ Baǵjan 
+footer: Powered by [VuePress](https://vuepress.vuejs.org/zh/)
 ---
 
-## 💻 前端
+## 目录
+
+（1）算法与数据结构（JavaScript实现）
+
+- [🍉 算法](https://blog.harahozi.cn/docs/alg/binary-search.html)
+- [📈 数据结构](https://blog.harahozi.cn/docs/alg/)
+
+（2）前端
+
+- [🎨 HTML、CSS](https://blog.harahozi.cn/docs/html-css/)
+- [🥕 JavaScript、TypeScript](https://blog.harahozi.cn/docs/javascript/)
+- [🧮 Vue.js](https://blog.harahozi.cn/docs/vue/)
+
+（3）后端
+
+- [🐹 Golang](https://blog.harahozi.cn/docs/node/)
+- [🕸 Node.js](https://blog.harahozi.cn/docs/node/)
+- [🐸 Java](https://blog.harahozi.cn/docs/java/)
+
+（4）其他
+
+- [🐋 Docker](https://blog.harahozi.cn/docs/other/docker.html)
+- [📊 MYSQL](https://blog.harahozi.cn/docs/other/mysql.html)
+- [🥭 MongoDB](https://blog.harahozi.cn/docs/other/mongodb.html)
+- [🧩 Nginx](https://blog.harahozi.cn/docs/other/nginx.html)
+- [⌨️ Redis](https://blog.harahozi.cn/docs/other/redis.html)
+
+## 说明
+
+如果文章过程中发现错误，或者想提交文章欢迎 isuue 或 pr。
+
+<!-- ## 💻 前端
 
 - [HTML && CSS](./html-css/)
 - [JavaScript](./javascript)
@@ -37,4 +68,4 @@ footer: Elǵar ♥ Baǵjan
 - [Redis](./other/redis.html)
 - [Nginx](./other/nginx.html)
 - [MySQL](./other/mysql.html)
-- [MongoDB](./other/mongodb.html)
+- [MongoDB](./other/mongodb.html) -->

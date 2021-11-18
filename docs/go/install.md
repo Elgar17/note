@@ -14,7 +14,7 @@
 
 检测 `GOROOT` 有没有添加成功。
 
-```bash
+```text
 C:\Users\think>go version
 go version go1.16 windows/amd64
 ```
@@ -47,4 +47,4 @@ pkg # 一些依赖包
 src # 存放项目代码
 ```
 
-## 测试
+## 4. 测试
