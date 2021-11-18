@@ -1,17 +1,17 @@
-# 组合
+# 结构体的嵌套
 
-组合指的是一个结构体的成员是另一个结构体。
+组合是结构体的嵌套。
 
 ```go
 type score struct {
-	Math int
-	English int
+    Math int
+    English int
 }
 
 type student struct {
-	Name string
-	Age  int
-	Score score
+    Name string
+    Age  int
+    Score score
 }
 ```
 
@@ -36,7 +36,7 @@ s1.Score.Math // 56
 
 ```go
 func (s score) prtnMath()  {
-	fmt.Println(s.Math)
+    fmt.Println(s.Math)
 }
 ```
 
@@ -53,9 +53,9 @@ s1.Score.prtnMath() // 报错
 
 ```go
 type student struct {
-	Name string
-	Age  int
-	score
+    Name string
+    Age  int
+    score
 }
 ```
 
