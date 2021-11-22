@@ -35,6 +35,7 @@ footer: Powered by [VuePress](https://vuepress.vuejs.org/zh/)
 
 （4）其他
 
+- [🎾 Network](https://blog.harahozi.cn/docs/network/)
 - [🐋 Docker](https://blog.harahozi.cn/docs/other/docker.html)
 - [📊 MYSQL](https://blog.harahozi.cn/docs/other/mysql.html)
 - [🥭 MongoDB](https://blog.harahozi.cn/docs/other/mongodb.html)

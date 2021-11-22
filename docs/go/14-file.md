@@ -8,7 +8,15 @@
 
 ## 读取文件
 
+这里使用 `io/ioutil`、`os` 包进行文件间的读取和显示。
+
 ```go
+// 打开文件
+file, _ := os.Open("./notes.txt")
+// 读取全部内容
+byte, _ := ioutil.ReadAll(file)
+
+fmt.Println(string(byte)) // Hello Go!
 ```
 
 ## 写入文件

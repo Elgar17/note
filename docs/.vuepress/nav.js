@@ -32,26 +32,50 @@ module.exports = [ //导航栏
                 link: '/node/'
             },
             {
-                text: 'Linux',
-                link: '/other/linux'
-            },
-            {
                 text: '运维',
                 link: '/other/'
             }
         ]
     },
     {
-        text: '网络与算法',
-    //     ariLabel: '/network/',
-        items: [ //多级导航栏
+        text: '算法与数据结构',
+        items: [
             {
-                text: '算法篇',
+                text: '数据结构',
                 link: '/alg/'
             },
             {
-                text: '网络篇',
+                text: '算法',
+                link: '/other/linux'
+            }
+        ]
+    },
+    {
+        text: '其他',
+        items: [
+            {
+                text: '网络',
                 link: '/network/'
+            },
+            {
+                text: 'MySQL',
+                link: '/other/mysql.html'
+            },
+            {
+                text: 'Mongodb',
+                link: '/other/mongodb.html'
+            },
+            {
+                text: 'Redis',
+                link: '/other/redis.html'
+            },
+            {
+                text: 'Docker',
+                link: '/other/docker.html'
+            },
+            {
+                text: 'Nginx',
+                link: '/other/nginx.html'
             }
         ]
     },
