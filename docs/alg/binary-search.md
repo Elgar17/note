@@ -55,11 +55,34 @@ var search = function (nums, target) {
 }
 ```
 
+Go 语言实现：
+
+```go
+func BinarySearch(arr []int, target int, left int, right int) int {
+    l := left
+    r := right
+    for {
+        if l > r {
+            return -1
+        }
+        mid := (l + r) / 2
+        midNum := arr[mid]
+        if midNum == target {
+            return mid
+        } else if target > midNum {
+            l = mid + 1
+        } else {
+            r = mid - 1
+        }
+    }
+}
+```
+
 复杂度
 
 - 时间复杂度：O(logn)。
 - 空间复杂度：O(1)。
 
 作者：LeetCode-Solution
-链接：https://leetcode-cn.com/problems/binary-search/
+链接：[leetcode-cn.com](https://leetcode-cn.com/problems/binary-search/)
 来源：力扣（LeetCode）
