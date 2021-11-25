@@ -15,7 +15,8 @@ module.exports = [{
         'inAndOf',
         'bom',
         'effactive-js',
-        'webworker'
+        'webworker',
+        'fast-js'
     ],
 }, {
     title: 'Typescript',

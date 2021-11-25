@@ -6,21 +6,21 @@ module.exports = [{
         'd-queue'
     ]
     },{
-    title: '前端常见算法',
+    title: '算法',
     children: [
+        'bubblesot',
+        'quick-sort',
         'binary-search',
-        'coin-change',
-        'parsing-url',
         'num-ways',
+        'coin-change',
+        'max-sub-nums',
+        'longest-palindrome',
+        'parsing-url',
         'conversion',
         'k-largest-el',
-        'chunk',
-        'quick-sort',
-        'max-sub-nums',
-        'compare-version',
         'get-kth-from-end',
-        'k-largest-el',
-        'max-sub-nums',
+        'chunk',
+        'compare-version',
         'version-sort'
     ],
 }]

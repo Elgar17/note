@@ -10,62 +10,53 @@ ts 新增的类型：tuple（元组）, enum（枚举）, any（任意类型）,
 
 js 定义变量：
 
-```js 
+```js
 let age = 18;
 ```
 
 ts 需要带上**变量类型**，定义好类型之后这个变量不能赋其它类型的值。
 
-```ts 
+```ts
 let age: number = 18;
 
 age = "16"  // 报错 类型不匹配
 ```
 
-**（1）字符串类型**
+（1）字符串类型
 
 ```ts
 let name: string = "Tom"
 ```
 
+（2）数值类型
 
-
-**（2）数值类型**
-
-```ts 
+```ts
 let age: number = 18;
-age = null;			// 正确
-age = undefined;	// 正确
+age = null;         // 正确
+age = undefined;    // 正确
 ```
 
-
-
-**（3）布尔值**
+（3）布尔值
 
 ```ts
 let boo: boolean = true;
-boo = null;		// 正确
-boo = undefined	// 正确
+boo = null;     // 正确
+boo = undefined // 正确
 ```
 
-
-
-**（4）undefined,null**
+（4）undefined,null
 
 ```ts
 let n: null = null; // 只能写 null
 
 n = undefined    // 报错
 
-
 let unde: undefined = undefined; // 只能是 undefined
 
 unde = "hi"     // 报错
 ```
 
-
-
-**（5）数组**
+（5）数组
 
 数组也一样，元素类型固定，赋其它类型的值会报错，不会限制长度，语法：
 

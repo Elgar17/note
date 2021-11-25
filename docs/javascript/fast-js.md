@@ -31,7 +31,6 @@ let  menu = documnet.getElementById("menu").getElementByTagName('a')
 // 效率会高一些
 // 选择 class 为 btn 和 bg-red 的 div 元素
 let  btn = documnet.querySlectorAll('div.btn,div.bg-red')
-
 ```
 
 ## 5. 重绘与重排
