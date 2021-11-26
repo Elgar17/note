@@ -11,7 +11,7 @@ features:
 - title: 坚持
   details: 伟大的作品，不是靠力量而是靠坚持才完成的。
   
-footer: Powered by [VuePress](https://vuepress.vuejs.org/zh/)
+footer: Powered by VuePress
 ---
 
 ## 目录
@@ -29,7 +29,7 @@ footer: Powered by [VuePress](https://vuepress.vuejs.org/zh/)
 
 （3）后端
 
-- [🐹 Golang](https://blog.harahozi.cn/docs/node/)
+- [🐹 Golang](https://blog.harahozi.cn/docs/go/)
 - [🕸 Node.js](https://blog.harahozi.cn/docs/node/)
 - [🐸 Java](https://blog.harahozi.cn/docs/java/)
 

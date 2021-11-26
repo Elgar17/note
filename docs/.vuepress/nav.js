@@ -24,6 +24,10 @@ module.exports = [ //导航栏
         text: '后端',
         items: [
             {
+                text: 'Golang',
+                link: '/go/'
+            },
+            {
                 text: 'Java',
                 link: '/java/'
             },

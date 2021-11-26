@@ -2,6 +2,8 @@
 
 GO 语言开源于 2009 年，为了解决分布式开发服务的问题，很适合作为后端语言，很多大型互联网公司正在用 GO 代替 Java。
 
+Go 语言结合了其他语言中好的一些特性，比如 C 语言的结构体，JavaScript 中的高阶函数等。
+
 ## 目录
 
 1. [win10 环境搭建](./install.md)
@@ -23,22 +25,28 @@ GO 语言开源于 2009 年，为了解决分布式开发服务的问题，很�
 
 [标准中文文档](https://studygolang.com/pkgdoc)
 
-## 基本结构
+## 快速开始
 
 ```go
-// 程序必有的包
+// main.go
 package main
 
 // I/O 模块
 import "fmt"
 
-// 程序开始的函数
 func main() {
     fmt.Println("Hello, World!") // 输出
 }
 ```
 
-## 常用命令
+运行
+
+```bash
+# 运行
+go run hello.go
+```
+
+一些其他命令
 
 ```bash
 # 编译，生成可执行文件
@@ -46,7 +54,4 @@ go build hello.go
 
 # 查看 go 环境变量
 go env
-
-# 运行
-go run hello.go
 ```

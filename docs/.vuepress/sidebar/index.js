@@ -6,6 +6,7 @@ const vue = require('./vue')
 const other = require('./other')
 const alg = require('./alg')
 const java = require('./java')
+const java = require('./go')
 
 module.exports = {
     '/html-css/': htmlCss,
@@ -15,5 +16,6 @@ module.exports = {
     '/node/': node,
     '/other/': other,
     '/alg/': alg,
-    '/java/': java
+    '/java/': java,
+    '/go/': go
 }

@@ -19,7 +19,7 @@
 
 （3）后端
 
-- [🐹 Golang](https://blog.harahozi.cn/docs/node/)
+- [🐹 Golang](https://blog.harahozi.cn/docs/go/)
 - [🕸 Node.js](https://blog.harahozi.cn/docs/node/)
 - [🐸 Java](https://blog.harahozi.cn/docs/java/)
 
