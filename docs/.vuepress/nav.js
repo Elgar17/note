@@ -28,16 +28,16 @@ module.exports = [ //导航栏
                 link: '/go/'
             },
             {
+                text: 'Go 网络编程',
+                link: '/go-web/'
+            },
+            {
                 text: 'Java',
                 link: '/java/'
             },
             {
                 text: 'Node.js',
                 link: '/node/'
-            },
-            {
-                text: '运维',
-                link: '/other/'
             }
         ]
     },
