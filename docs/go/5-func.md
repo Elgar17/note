@@ -155,9 +155,9 @@ one, two := plus_one(2, 3)
 
 ```go
 func main() {
-	func(){
-		fmt.Println("hi") // hi
-	}()
+    func(){
+        fmt.Println("hi") // hi
+    }()
 }
 ```
 
@@ -165,9 +165,9 @@ func main() {
 
 ```go
 func main() {
-	func(i int){
-		fmt.Println(i) // 1
-	}(1)
+    func(i int){
+        fmt.Println(i) // 1
+    }(1)
 }
 ```
 

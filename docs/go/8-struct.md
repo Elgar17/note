@@ -19,6 +19,14 @@ s1 := student{"Jerry", 15}
 
 上面实例中，初始化了一个 `s1` 结构体，基于 `student`，初始化了属性，`Jerry` 赋给属性 `name`，15 赋给属性 `age`。
 
+也可以使用 new 函数创建结构体。
+
+```go
+s2 := new(student)
+```
+
+`s2` 是 `*student` 类型值指针，指针相关会面会介绍。
+
 ```go
 s1.name // Jerry
 s1.age // 15
@@ -49,7 +57,9 @@ func printStu(s student) {
 }
 ```
 
-## struct 的复制
+## 2. 复制 struct
+
+struct 被实例化时，分配内存。
 
 struct 结构算是基础类型，我们将一个 struct 赋值给另一个 struct 时，会产生独立的变量，两个 struct 互不影响。
 
@@ -65,11 +75,29 @@ fmt.Println(s2.Name) // Tom
 
 struct 作为函数的参数传入，函数内部获取复制的另一份。
 
-## struct 指针
+## 3. struct 指针
 
-## struct 的嵌套
+可以使用 sutruct 指针保存结构体。
 
-## struct 转换其他类型
+```go
+s1 := student{"Jerry", 15} // s1 是 student 结构体
+s2 := &student{"Jerry", 15} // s2 是 *student 指针
+```
+
+上面实例中，先初始化了一个结构体，把结构体的地址存到 `s2` 指针中。
+
+可以通过 `.` 访问结构体的属性，指针也可以访问，在 C 语言中使用 `->` 符号。
+
+```go
+s1.name // Jerry
+s2.name // Jerry 
+// 等价于 
+(*s2).name
+```
+
+在 Go 语言中 `s2.name` 与 `(*s2).name` 是等价的。
+
+## 4. struct 转换
 
 struct 可以转化为其他类型，可以转为以下类型。
 
@@ -96,7 +124,7 @@ if e == nil {
 }
 ```
 
-## 方法
+## 5. 方法
 
 方法也是一个函数，跟函数的区别是，方法可以跟结构体关联。
 
@@ -127,8 +155,4 @@ func (s student) printStu(){
 
 方法也可以有参数和返回值，这些跟普通函数一样。
 
-## go 语言中的 class
-
-```go
-
-```
+<!-- TODO: ## 6. go 语言中的 class -->

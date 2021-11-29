@@ -24,4 +24,46 @@ fmt.Print(*p) // 12
 
 用 `*` 符号来获取地址指向的值。
 
-# 指针修改数组
+当一个指针没有赋值时，值为 nil。
+
+```go
+var p *int
+p == nil // true
+``
+
+## 2. new
+
+new 是一个函数，用于向内存申请空间。
+
+值类型数据在声明时，会自动申请空间，引用类型则不会，比如指针、map等。
+
+```go
+var a *int
+*a = 10 // 报错
+```
+
+上面实例中，初始化了一个 int 型指针，运行会报错，因为我们没有为 `a` 申请空间，使用 new 可以申请空间。
+
+```go
+var p *int
+p = new(int)
+*p = 10 // 正确
+```
+
+new 方法会返回该类型的指针，参数是创建的类型。
+
+## 3. make
+
+make 也是申请空间的函数，不同于 new，它只用于 slice、map、chan 的内存创建，返回引用类型本身。
+
+```go
+var myMap map[string]int
+myMap = make(map[string]int, 10)
+myMap["apple"] = 10
+```
+
+## 4. new 与 make 的区别
+
+1. 二者都是用来做内存分配的。
+2. make 只用于slice、map、channel 的初始化，返回引用类型的本身。
+3. new 用于类型的内存分配，并且内存对应的值为类型零值，返回的是指向类型的指针。
