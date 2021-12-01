@@ -156,3 +156,5 @@ func (s student) printStu(){
 方法也可以有参数和返回值，这些跟普通函数一样。
 
 <!-- TODO: ## 6. go 语言中的 class -->
+<!-- TODO: ## 6. go 语言中的 class -->
+<!-- TODO: ## 6. go 语言中的 class -->
