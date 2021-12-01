@@ -11,7 +11,7 @@ features:
 - title: 坚持
   details: 伟大的作品，不是靠力量而是靠坚持才完成的。
   
-footer: Powered by VuePress
+footer: MIT Licensed | Copyright © 2021 Elǵar
 ---
 
 ## 目录
