@@ -17,6 +17,12 @@ func main() {
 
 下面实现 upload 方法。
 
+大概分几部分：
+
+- 获取前端发来的文件
+- 在本都创建文件
+- 将文件保存到本地
+
 ```go
 func upload(w http.ResponseWriter, r *http.Request) {
     // 获取文件
@@ -39,7 +45,7 @@ func upload(w http.ResponseWriter, r *http.Request) {
     if len(filetype) > 0 {
         suffix = filetype
     }
-    //
+    // 生成文件名
     filename := fmt.Sprintf("%d%d%s",
         time.Now().Unix(),
         rand.Int31(),
