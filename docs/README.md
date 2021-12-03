@@ -10,8 +10,7 @@ features:
   details: 学习就是行动的过程，只有行动中学到更多。
 - title: 坚持
   details: 伟大的作品，不是靠力量而是靠坚持才完成的。
-  
-footer: MIT | Copyright (c) 2021 Elgar17
+footer: MIT Licensed | Copyright © 2021 Elǵar
 ---
 
 ## 目录
