@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "node ./builds/addMarkdown.js && vuepress build docs && node ./builds/delMarkdown.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.7.1"
+  },
+  "dependencies": {
+    "gitalk": "^1.7.2"
   }
 }
