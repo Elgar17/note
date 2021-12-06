@@ -5,6 +5,8 @@
   </div>
 </template>
 <script>
+import 'gitalk/dist/gitalk.css'
+
 export default {
   name: 'comment',
   data() {

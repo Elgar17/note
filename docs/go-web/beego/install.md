@@ -1,6 +1,6 @@
 # Beego
 
-##　概述
+## 概述
 
 Beego 框架使用教程。
 
@@ -26,7 +26,6 @@ bee 是 Beego 框架的脚手架工具，使用 bee 工具的命令，可以快�
 
 bee 是一个可执行文件（exe 结尾），存放在 `$GOPATH/bin` 目录中，需要先把 `$GOPATH/bin` 添加到环境变量中。
 
-
 如果遇到安装失败：
 
 ```text
@@ -41,7 +40,7 @@ git config --global http.sslVerify false
 
 安装完成后，使用以下命令查看是否安装成功
 
-```
+```bash
 bee version
 ```
 

@@ -29,7 +29,7 @@ module.exports = {
       })();`
     ]
   ],
-  description: '前端到全栈的笔记', //描述
+  description: 'Go 语言全栈笔记', //描述
   dest: './dist', // 设置输出目录
   port: 2233, //端口
 

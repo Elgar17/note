@@ -17,7 +17,7 @@ beego.Router("/hello", &controllers.MainController{}, "get:GetHello")
 
 ```go
 func (c *MainController) GetHello() {
-	c.Ctx.WriteString("Hello World!")
+    c.Ctx.WriteString("Hello World!")
 }
 ```
 
@@ -32,16 +32,16 @@ func (c *MainController) GetHello() {
 package controllers
 
 import (
-	"github.com/astaxie/beego"
+    "github.com/astaxie/beego"
 )
 
 type TodoController struct {
-	beego.Controller
+    beego.Controller
 }
 
 // @router /todo/list [get]
 func (c *TodoController) GetList() {
-	c.Ctx.WriteString("get todo list api")
+    c.Ctx.WriteString("get todo list api")
 }
 ```
 
