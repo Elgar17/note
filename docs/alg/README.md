@@ -4,6 +4,8 @@
 
 ## 数据结构
 
+数据结构是算法的基石，不理解数据结构，很难学习算法。
+
 1. [Stack(栈结构)](./d-stack.md)
 1. [Queue(队列结构)](./d-queue.md)
 <!-- TODO: 1. [List(链表)](./d-queue.md) -->
@@ -17,18 +19,22 @@
 1. [冒泡排序（简单）](./bubblesot.md)
 1. [快速排序（中等）](./quick-sort.md)
 
-（2）搜索
+（2）双指针
+
+1. [633. 平方数之和（简单）](./633.judge-square-sum.md)
+
+（3）搜索
 
 1. [二分法查找（中等）](./binary-search.md)
 
-（3）动态规划
+（4）动态规划
 
 1. [青蛙跳台阶，斐波那契数列（简单）](./num-ways.md)
 1. [最少硬币组合（中等）](./coin-change.md)
 1. [连续子数组的最大和（中等）](./max-sub-nums.md)
 1. [最长回文子串（中等）](./longest-palindrome.md)
 
-（4）其他
+（5）其他
 
 1. [解析 URL（简单）](./parsing-url.md)
 1. [对象结构转换成 Dom 树（简单）](./conversion.md)

@@ -11,17 +11,17 @@ Go 语言中有两个重要的目录：
 
 下面详细介绍环境的搭建。
 
-## 2. 下载 GO　安装包
+## 2. 下载 Go　安装包
 
 打开中文官网 [https://studygolang.com/dl](https://studygolang.com/dl) 下载 `Microsoft Windows` 字样的版本。
 
-下载完成后，点击运行，选择一个 GO语言安装目录，我这里选择 `D:\soft\go`。
+下载完成后，点击运行，选择一个 Go 语言安装目录，我这里选择 `D:\soft\go`。
 
 ## 3. 添加环境变量
 
-我们现需要添加三个环境变量，一个是 GO 语言的安装目录 `GOROOT`，另一个是我们写程序的目录 `GOPATH`。
+我们现需要添加三个环境变量，一个是 Go 语言的安装目录 `GOROOT`，另一个是我们写程序的目录 `GOPATH`。
 
-- `GOROOT`，GO 语言的安装目录
+- `GOROOT`，Go 语言的安装目录
 - `GOPATH`，存放代码的目录
 - `GOBIN`，用于全局使用 Go 相关命令
 
@@ -34,7 +34,7 @@ C:\Users\think>go version
 go version go1.16 windows/amd64
 ```
 
-接下来添加 `GOPATH`, 也被称为 GO 语言的的工作目录，GO 语言对可发目录有要求，不能在随意的地方开发，安装完成之后，我们需要制定开发目录 `GOPATH`。
+接下来添加 `GOPATH`, 也被称为 Go 语言的的工作目录，Go 语言对可发目录有要求，不能在随意的地方开发，安装完成之后，我们需要制定开发目录 `GOPATH`。
 
 ```bash
 go env

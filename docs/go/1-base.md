@@ -22,7 +22,7 @@ var b bool = true
 
 每个变量前面都包含一个 `var`，可以不写。
 
-也可以直接赋值，GO 语言可以推断处类型。
+也可以直接赋值，Go 语言可以推断处类型。
 
 ```go
 flag := false
@@ -127,7 +127,7 @@ var f1 float64 = 3.1415
 
 （3）iota
 
-iota 是 GO 语言中的一个计数器。
+iota 是 Go 语言中的一个计数器。
 
 ```go
 const (
@@ -151,31 +151,31 @@ fmt.Println(i, j) // 2 3
 字符串就是一串固定长度的字符连接起来的字符序列。Go 的字符串是由单个字节连接起来的。Go 语言的字符串的字节使用 UTF-8 编码标识 Unicode 文本。
 
 ```go
-var s string = "Hello GO!" // 显示定义
+var s string = "Hello Go!" // 显示定义
 // 或
-var s = "Hello GO!" // 隐式定义
+var s = "Hello Go!" // 隐式定义
 // 或
-s := "Hello GO!" 
+s := "Hello Go!" 
 ```
 
 原始字符串，有些字符串中包含计算机指令，比如 `\n`，在字符串中有 `\n` 是换行。
 
 ```go
-fmt.Println("hello \n GO!")
+fmt.Println("hello \n Go!")
 ```
 
 显示结果如下， `\n` 换成了换行。
 
 ```text
 hello 
- GO!
+ Go!
 ```
 
 如果我们想显示 `\n` 把字符串使用 `` 括起来，这个叫原始字符串。
 
 ```go
-fmt.Println(`hello \n GO!`)
-// hello \n GO!
+fmt.Println(`hello \n Go!`)
+// hello \n Go!
 ```
 
 字符串的每个位置对应一个索引，像数组一样获取每一个字符，打印字符的 ASCII 码。

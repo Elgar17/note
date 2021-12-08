@@ -2,7 +2,7 @@
 
 ## 概述
 
-GO 语言提供了 http 包，已经实现了 http 请求的处理逻辑，所以使用 GO 语言编写 Web 服务很方便。
+Go 语言提供了 http 包，已经实现了 http 请求的处理逻辑，所以使用 Go 语言编写 Web 服务很方便。
 
 ```go
 package main

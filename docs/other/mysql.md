@@ -2,7 +2,7 @@
 
 ![mysql](mysql.jpg)
 
-## 1. 数据库介绍
+## 数据库介绍
 
 数据库是什么？
 
@@ -42,7 +42,7 @@ Jerry  14  5
 
 MySQL 使用的最为广泛，这里会介绍基本使用，掌握了基本使用可以处理日常开发的 80% 的业务。
 
-## 2. 安装 MySQL
+## 安装 MySQL
 
 [点击查看](https://dev.mysql.com/downloads/mysql/)
 
@@ -189,7 +189,7 @@ mysql -u root -p123456
 sc delete mysql 
 ```
 
-## 3. 可视化工具
+## 可视化工具
 
 操作数据库是一般使用命令操作的。这里推荐使用一个可视化操作工具，为了更直观的查看数据库中的数据和数据的对应关系。
 
@@ -223,7 +223,7 @@ ALTER USER'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 flush privileges;
 ```
 
-## 4. MySQL 基本命令
+## MySQL 基本命令
 
 MySQL 属于关系型数据库，不像 mongoDB，MySQL有自己的查询语言，首先简单介绍一下SQL语句。
 
@@ -313,7 +313,7 @@ select * from users where username like '%J%';
 delete from users where username='Jerry'
 ```
 
-## 6. 数据类型
+## 数据类型
 
 （1）数值
 
@@ -323,13 +323,13 @@ delete from users where username='Jerry'
 - big：8个字节
 - float：4个字节
 - double：8个字节
-- decimal：字符串形式的浮点数，金融计算使用。
+- decimal：字符串形式的浮点数，金融计算使用
 
 （2）字符串
 
 - char：字符串 0 - 255
-- varchar：可变字符串（常用），0-65536
-- tinytext：微型文本 2^8 -1)
+- varchar：可变字符串（常用），0 ~ 65536
+- tinytext：微型文本（0 ~ 2^8 - 1)
 - text：文本 2^16 （常用）
 
 （3）时间日期
@@ -343,7 +343,7 @@ delete from users where username='Jerry'
 
 （4）null
 
-## 7. 数据库字段属性
+## 数据库字段属性
 
 - Unsigned：无符号整数
 - zerofill：零填充，不足的位数用零填充
@@ -359,7 +359,7 @@ delete from users where username='Jerry'
 - gmt_create：创建时间
 - gmt_update：修改时间
 
-## 8. Node.js 中使用 MySQL
+## Node.js 中使用 MySQL
 
 初始化项目，和安装
 
@@ -403,6 +403,14 @@ con.end()
 ## 彻底关闭
 
 win10 按住 win + R 输入 services.msc，查找 mysql 是否在启动，如果以启动，右击停止。
+
+## 创建表
+
+```sql
+CREATE TABLE IF NOT EXISTS `student` (
+    
+)
+```
 
 ## 参考链接
 

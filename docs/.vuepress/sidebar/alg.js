@@ -10,6 +10,7 @@ module.exports = [{
     children: [
         'bubblesot',
         'quick-sort',
+        "633.judge-square-sum",
         'binary-search',
         'num-ways',
         'coin-change',
