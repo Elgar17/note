@@ -15,7 +15,7 @@ Go 语言中有两个重要的目录：
 
 打开中文官网 [https://studygolang.com/dl](https://studygolang.com/dl) 下载 `Microsoft Windows` 字样的版本。
 
-下载完成后，点击运行，选择一个 Go 语言安装目录，我这里选择 `D:\soft\go`。
+下载完成后，点击运行，选择一个 Go 语言安装目录，安装即可。
 
 ## 3. 添加环境变量
 

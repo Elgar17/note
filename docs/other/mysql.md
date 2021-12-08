@@ -345,7 +345,7 @@ delete from users where username='Jerry'
 
 ## 数据库字段属性
 
-- Unsigned：无符号整数
+- unsigned：无符号整数
 - zerofill：零填充，不足的位数用零填充
 - auto_increment：自增，自动在上一条记录的基础上增加一，必须为整数
 - not null：不给这个属性赋值会报错
@@ -406,11 +406,49 @@ win10 按住 win + R 输入 services.msc，查找 mysql 是否在启动，如果
 
 ## 创建表
 
+创建完整表的格式如下：
+
+```sql
+CREATE TABLE IF NOT EXISTS `表名` (
+    `字段名` 类型 [属性] [索引] [描述],
+    `字段名` 类型 [属性] [索引] [描述]
+)[表类型][字符集]
+```
+
+下面创建了一个学生表的例子。
+
 ```sql
 CREATE TABLE IF NOT EXISTS `student` (
-    
-)
+    `id` INT(4) NOT NULL AUTO_INCREMENT COMMENT '学号',
+    `name` VARCHAR(50) NOT NULL DEFAULT '匿名' COMMENT '姓名',
+    `passqord` VARCHAR(20) NOT NULL DEFAULT '123456' COMMENT '密码',
+    `sex` VARCHAR(2) NOT NULL DEFAULT '男' COMMENT '性别',
+    `bir` DATETIME DEFAULT NULL COMMENT '生日',
+    PRIMARY KEY(`id`)
+)ENGINE=INNODB DEFAULT CHARSET=utf8
 ```
+
+如果数据表已经存在，想查看创建的命令，可以使用以下命令查看创建表的命令。
+
+```sql
+SHOW CREATE TABLE `user` -- 查看 user 表创建的命令
+DESC `student` -- 查看表的结构
+```
+
+## 数据表示的类型
+
+- INNODB，节约空间，速度快
+- MYSISANM，安全性高，事务的处理，多表多用户操作
+
+|        |INNODB|MYSISANM|
+|--      |------|--------|
+|事务    |YES  |NO|
+|数据行锁 |YES|NO|
+|外键约束 |NO  |YES|
+|全文搜索 |NO  |YES|
+|占用空间| 较小 |较大，约2倍|
+
+所有数据库存在 data 文件中
 
 ## 参考链接
 
