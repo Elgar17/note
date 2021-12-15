@@ -11,7 +11,7 @@ Go 语言中有两个重要的目录：
 
 下面详细介绍环境的搭建。
 
-## 2. 下载 Go　安装包
+## 2. 下载 Go 安装包
 
 打开中文官网 [https://studygolang.com/dl](https://studygolang.com/dl) 下载 `Microsoft Windows` 字样的版本。
 
