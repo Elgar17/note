@@ -228,7 +228,7 @@ s := "ب"
 fmt.Println(len(s)) // 2
 ```
 
-字符串可以用 `range` 进行遍历.
+字符串可以用 `range` 进行遍历。
 
 ```go
 s := "hello Ǵo"
@@ -237,6 +237,8 @@ for i, c := range s {
 }
 // 0 h 1 e 2 l 3 l 4 o 5   6 Ǵ 8 o
 ```
+
+i 是索引，c 是字符串。
 
 ## 4. nil
 
