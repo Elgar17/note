@@ -82,7 +82,49 @@ DROP TABLE IF EXISTS stu
 
 ## DML 语言
 
-## 添加
+DML 是操作表中的数据的语言。比如给表添加，删除，更新数据等。
+
+（1） 添加
+
+这里列举了一些例子，向 `user` 表中插入数据的几种方式。
+
+```sql
+INSERT INTO `user` (`name`) VALUES('Tom')
+```
+
+上面例子是向 `user` 表中插入一条 `name` 等于 `Tom` 的数据。
+
+也可以同时插入多个值。
+
+```sql
+INSERT INTO `user` (`name`) VALUES('Thomas'), ("Jerry")
+```
+
+如果要插入多个属性，写法如下。
+
+```sql
+INSERT INTO `user` (`name`, `age`) VALUES('Tuffy', 18)
+```
+
+（2） 修改
+
+如果有一个表的数据有错误，我们去更改这个字段，这个过程属于表的更新。
+
+下面例子是，将操作 user 表，user_id 为 1 的用户的 `name` 为改为 Tom。
+
+```sql
+UPDATE `user` SET `name`='Tom' WHERE user_id=1
+```
+
+注意，这里不写 `WHERE` 及以后的条件的话，会修改整个表中的所有的 `user` 值改为 Tom。
+
+```sql
+UPDATE `user` SET `name`='Tom', `email`="ee@qq.com" WHERE user_id=1
+```
+
+也可以修该多个属性。
+
+下面介绍以下 `WHERE` 语句后面的筛选条件。
 
 ## 数据表示的类型
 
