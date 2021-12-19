@@ -97,13 +97,19 @@ INSERT INTO `user` (`name`) VALUES('Tom')
 也可以同时插入多个值。
 
 ```sql
-INSERT INTO `user` (`name`) VALUES('Thomas'), ("Jerry")
+INSERT INTO `user` (`name`) VALUES('Thomas'), ('Jerry')
 ```
 
 如果要插入多个属性，写法如下。
 
 ```sql
 INSERT INTO `user` (`name`, `age`) VALUES('Tuffy', 18)
+```
+
+获取当前时间
+
+```sql
+INSERT INTO `stu` (`name`,`bir`) VALUES ('小江', CURRENT_TIME)
 ```
 
 （2） 修改
@@ -118,13 +124,47 @@ UPDATE `user` SET `name`='Tom' WHERE user_id=1
 
 注意，这里不写 `WHERE` 及以后的条件的话，会修改整个表中的所有的 `user` 值改为 Tom。
 
+`WHEWRE` 后面的条件语句中间，不能有空格。
+
 ```sql
-UPDATE `user` SET `name`='Tom', `email`="ee@qq.com" WHERE user_id=1
+-- 正确
+WHERE user_id=1
+
+-- 错误
+WHERE user_id=1
 ```
 
 也可以修该多个属性。
 
+```sql
+UPDATE `user` SET `name`='Tom', `email`="ee@qq.com" WHERE user_id=1
+```
+
 下面介绍以下 `WHERE` 语句后面的筛选条件。
+
+- `=`：等于某个值，如，`user_id=1`
+- `>`：大于某个值，如，`user_id>1`
+- `<`：小于某个值，如，`user_id<1`
+- `!=`：不等于某个值，如，`user_id!=1`
+- `BETWEEN`：某个区间内的，如，`WHERE user_id BETWEEN 3 AND 5`，包含3，5
+- `AND`: 多个判断条件，如，`WHERE user_id>5 AND user_id<7`
+- `OR`: 满足一个条件即可，如，`WHERE user_id>5 OR sex=2`
+
+（3）删除
+
+删除用户某个表中的一条数据。
+
+```sql
+DELETE FROM `user` WHERE user_id=10
+```
+
+注意，不写 `WHERE` 条件语句，会清空数据表，也可以使用清空语句清空数据。
+
+```sql
+TRUNCATE `user`
+```
+
+不同点，TRUNCATE 会清零自增，       
 
 ## 数据表示的类型
 
