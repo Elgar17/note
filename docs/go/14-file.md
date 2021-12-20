@@ -8,7 +8,7 @@
 
 ## 读取文件
 
-这里使用 `io/ioutil`、`os` 包进行文件间的读取和显示。
+这里使用 `io/ioutil`、`os` 包进行文件的读取和显示。
 
 ```go
 // 打开文件
@@ -20,7 +20,23 @@ fmt.Println(string(byte)) // Hello Go!
 ```
 
 ## 写入文件
+<<<<<<< HEAD
 
  
  <comment-comment/> 
  
+=======
+
+这里使用 `io/ioutil` 包进行文件的写入。
+
+```go
+content := []byte("Hello\nGo!")
+// 将字节数组写入文件中
+err := ioutil.WriteFile("test.txt", content, 0644)
+if err != nil {
+    panic(err)
+}
+```
+
+如果有这个文件，会覆盖之前的文件，没有这个文件会创建一个文件。
+>>>>>>> 2a5365a7fd08914b73b0ac8b87aaa9f8c3816f39

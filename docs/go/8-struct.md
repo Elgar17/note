@@ -11,7 +11,7 @@ type student struct {
 }
 ```
 
-使用 `type` 关键字声明一个 struct 结构，名字叫 `student`, 这个结构包含两个属性，名字（name）和年龄（age）。
+上面例子是，声明了一个 struct 结构，名字叫 `student`, 这个结构包含两个属性，名字（name）和年龄（age）。
 
 ```go
 s1 := student{"Jerry", 15}

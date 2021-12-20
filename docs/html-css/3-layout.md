@@ -21,7 +21,7 @@ body {
 }
 
 .base {
-    ght: 100%;
+    right: 100%;
 }
 
 .wrapper {

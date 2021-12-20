@@ -14,12 +14,10 @@ node 中没有 window 的全局对象，node 中全局的 this 指向 global，g
 于是 Node.js 提供了文件路径相关的模块与全局属性。
 
 ```js
-console.log(__dirname)
-// 返回当前文件夹目录，如：
+console.log(__dirname) // 返回当前目录
 // D:\blog\blog-vp
 
-console.log(__filename)
-// 返回文件路径，如：
+console.log(__filename) // 返回文件路径
 // D:\blog\blog-vp\app.js
 ```
 
