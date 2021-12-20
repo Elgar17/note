@@ -66,3 +66,7 @@ function throttle(func,wait){
     }
 }
 ```
+
+ 
+ <comment-comment/> 
+ 

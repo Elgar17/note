@@ -207,3 +207,7 @@ function  type(obj) {
 参考资料：
 
 - [Effective JavaScript](https://book.douban.com/subject/10494340/)
+
+ 
+ <comment-comment/> 
+ 

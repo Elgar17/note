@@ -53,3 +53,7 @@ func (c *TodoController) GetList() {
 // init 方法中
 beego.Include(&controllers.TodoController{})
 ```
+
+ 
+ <comment-comment/> 
+ 

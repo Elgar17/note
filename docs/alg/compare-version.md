@@ -38,3 +38,7 @@ var compareVersion = function (version1, version2) {
 
 链接：https://leetcode-cn.com/problems/compare-version-numbers/
 来源：力扣（LeetCode）
+
+ 
+ <comment-comment/> 
+ 

@@ -53,3 +53,7 @@ Array.prototype.myReduce = function (cb) {
     return sum;
 }
 ```
+
+ 
+ <comment-comment/> 
+ 

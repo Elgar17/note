@@ -140,3 +140,7 @@ self.onmessage = function (e) {
 （2）新线程中，没有 window 对象
 
 没有 window 对象，也就是说没法操作 DOM, 也不能使用 alert。不过可以发送 Ajax 请求
+
+ 
+ <comment-comment/> 
+ 

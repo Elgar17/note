@@ -76,3 +76,7 @@ func WebSocket(w http.ResponseWriter, r *http.Request) {
 上面函数中 `Upgrade` 是升级 websocekt 的方法，返回两个值，第一个是，当前连的用户集合，比如这个请求中，当五个用户连接时，获取的就是五个用户的集合，第二个参数是错误。
 
 使用 `for` 循环，让连接一直监听用户发来的消息，使用 `ReadMessage` 方法读取了用户发来的消息，之后使用 `WriteMessage` 方法，将用户用户发来的数据，返回给用户。
+
+ 
+ <comment-comment/> 
+ 

@@ -82,3 +82,6 @@ jwt.verify(token, "hIKT")
 - 安全性相对高，不存在 csrf，需要防范XSS
 - 性能：传输性能比session 低，到服务器是不用查询数据库
 - 时效性：没有比session 好，服务器端不能清楚，只能等到过期时间
+ 
+ <comment-comment/> 
+ 

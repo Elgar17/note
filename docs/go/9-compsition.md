@@ -66,3 +66,7 @@ type student struct {
 ```go
 s1.score.prtnMath() // 56
 ```
+
+ 
+ <comment-comment/> 
+ 

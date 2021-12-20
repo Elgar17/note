@@ -11,3 +11,7 @@ function _new(fn, ...args) {
     return newObj instanceof Object ? newObj : obj 
 }
 ```
+
+ 
+ <comment-comment/> 
+ 

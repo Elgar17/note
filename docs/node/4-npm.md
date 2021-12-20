@@ -59,3 +59,7 @@ nrm use taobao
 # npm add [name] [网址]
 nrm add mypm www.mypm.com/mypm 
 ```
+
+ 
+ <comment-comment/> 
+ 

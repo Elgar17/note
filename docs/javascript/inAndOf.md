@@ -46,3 +46,7 @@ for(let i of arr){
     console.log(i); // 1 2 3
 }
 ```
+
+ 
+ <comment-comment/> 
+ 

@@ -43,3 +43,7 @@ console.log('Hello NodeJS!')
 ![hello-node](node-hello.gif)
 
 这样运行显然不行，我们需要运行 js 文件。
+
+ 
+ <comment-comment/> 
+ 

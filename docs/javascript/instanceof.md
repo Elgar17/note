@@ -23,3 +23,7 @@ console.log(_instanceof(d, Date)) // true
 d = 123
 console.log(_instanceof(d, Date)) // false
 ```
+
+ 
+ <comment-comment/> 
+ 

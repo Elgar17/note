@@ -69,3 +69,7 @@ footer: MIT Licensed | Copyright © 2021 Elǵar
 - [Nginx](./other/nginx.html)
 - [MySQL](./other/mysql.html)
 - [MongoDB](./other/mongodb.html) -->
+
+ 
+ <comment-comment/> 
+ 

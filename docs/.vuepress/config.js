@@ -38,6 +38,7 @@ module.exports = {
     // 添加导航栏
     nav: Nav,
     // 为以下路由添加侧边栏
-    sidebar: Sidebar
+    sidebar: Sidebar,
+    darkMode: true
   }
 }

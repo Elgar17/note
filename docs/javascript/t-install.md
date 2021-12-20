@@ -63,3 +63,7 @@ ts-node .\hello.ts
 ```
 
 控制台会输出 10，此目录下并不会生成 js 文件。
+
+ 
+ <comment-comment/> 
+ 
