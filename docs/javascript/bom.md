@@ -45,6 +45,4 @@ history.forword()
 
 Navigator 对象包含有关浏览器的信息。
 
- 
- <comment-comment/> 
- 
+<comment-comment/>
