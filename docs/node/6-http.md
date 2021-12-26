@@ -92,6 +92,4 @@ console.log(querystring.parse('name=tom&age=18'))
 // 返回对象： {name: "tom", age: '18'}
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

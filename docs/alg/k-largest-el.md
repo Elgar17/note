@@ -41,6 +41,5 @@ var findKthLargest = function (nums, k) {
 }
 ```
 
- 
- <comment-comment/> 
+<comment-comment/> 
  

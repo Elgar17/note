@@ -28,6 +28,4 @@ strArr := strings.Trim(str, " ")
 fmt.Println(strArr) // "hello world"
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

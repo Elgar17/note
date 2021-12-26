@@ -228,9 +228,4 @@ System.out.println(benz);
 
 不难发现，打印时调用了 toString 方法。
 
-
-
-
- 
- <comment-comment/> 
- 
+<comment-comment/> 

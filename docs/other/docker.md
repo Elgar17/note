@@ -400,10 +400,6 @@ docker login
 docker commit [comtainer id] lw96/msql:1.0
 ```
 
-
-
-
-
 ## 9、卸载 docker 容器
 
 ```bash
@@ -416,7 +412,4 @@ rm -rf /var/lib/docker
 # 资源放置目录 /var/lib/docker
 ```
 
-
- 
- <comment-comment/> 
- 
+<comment-comment/> 

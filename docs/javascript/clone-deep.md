@@ -46,6 +46,4 @@ function  cloneDeep(data) {
 
 这种实现的拷贝只能用于学习、面试等，这是简易版的实现，有些功能还没有实现，比如解决循环应用等等。
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

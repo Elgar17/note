@@ -165,13 +165,5 @@ Thread.currentThread().getPriority();
 
 - notifyall：恢复等待的一个线程
 
-​         
 
-
-
-
-
-
- 
- <comment-comment/> 
- 
+<comment-comment/> 

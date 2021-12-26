@@ -90,7 +90,6 @@ public class GoodsTest {
 		}
 		// 香蕉
 		// 苹果
-
 	}
 }
 ```
@@ -114,6 +113,5 @@ for(int n:list) {
 ```
 
 排序数字是从小大的顺序进行排序。 如果是字符串的话，是按照阿斯克码进行排序的。
- 
- <comment-comment/> 
- 
+
+<comment-comment/> 

@@ -19,8 +19,4 @@
 - beforeDistroy：实例销毁前
 - distroy：实例销毁
 
-
-
- 
- <comment-comment/> 
- 
+<comment-comment/> 

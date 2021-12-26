@@ -208,6 +208,4 @@ function  type(obj) {
 
 - [Effective JavaScript](https://book.douban.com/subject/10494340/)
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

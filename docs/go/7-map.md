@@ -12,13 +12,6 @@ list := map[string]int{"Tom": 16, "Jerry": 15 }
 
 声明 `map` 结构时，先使用 `map` 关键字，之后中括号内部定义键的类型，这里键的类型是 `string`，之后定义值的类型，这里定义了 `int` 类型，最后是初始化，初始化了两个数据。
 
-<<<<<<< HEAD
-## 2. 创建
-
- 
- <comment-comment/> 
- 
-=======
 ## 2. 使用
 
 （1）创建
@@ -62,4 +55,6 @@ for key, val := range myMap {
 ```
 
 每次循环时，key 和 val 的值是 myMap 的一个键和值，这个 for 循环会循环两次，因为 myMap 的长度为 2。
->>>>>>> 2a5365a7fd08914b73b0ac8b87aaa9f8c3816f39
+
+
+<comment-comment/> 

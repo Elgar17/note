@@ -9,6 +9,4 @@
 
 浏览器第一次请求新的内容是
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

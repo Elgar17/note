@@ -297,7 +297,4 @@ export default defineComponent({
 
  vue3 用起来还挺好的，也优化了不少地方，比如按需加载可以减少打包体积，使用 proxy 监听数据等等，当然，这些并不是 vue3 更新的所有东西，继续期待更多文章。
 
-
- 
- <comment-comment/> 
- 
+<comment-comment/> 

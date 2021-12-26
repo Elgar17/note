@@ -8,6 +8,4 @@ javascript 中的
 
 ## this 指向
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

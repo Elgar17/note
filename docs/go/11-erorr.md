@@ -12,5 +12,5 @@ if err != nil{
 上面例子是读取当前目录，使用 `err` 接受发生的错误，没有错误返回 `nil`。
 
  
- <comment-comment/> 
+<comment-comment/> 
  

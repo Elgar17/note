@@ -106,6 +106,4 @@ const sum = add(5,6) // 10
 const m = add(5,6) // 30
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

@@ -67,6 +67,4 @@ function throttle(func,wait){
 }
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

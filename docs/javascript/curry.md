@@ -34,6 +34,4 @@ console.log(add()) // 10
 
 上面例子中我们发现，函数的返回值也是函数，不过我们还需要设置结束的条件，这个函数没有设置结束条件的话，你得不到返回值。
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

@@ -58,8 +58,6 @@ employee 必须包含两个节点，顺序不能换。
 <!ELEMENT employee (name,age)>
 ```
 
-
-
 ```dtd
 employee 至少出现一次
 <!ELEMENT hr (employee+)>
@@ -347,7 +345,4 @@ public class XPath {
 }
 ```
 
-
- 
- <comment-comment/> 
- 
+<comment-comment/> 

@@ -242,6 +242,4 @@ str.append("b");
 System.out.print(str); // ab
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

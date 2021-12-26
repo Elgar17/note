@@ -1,6 +1,5 @@
 # inheritAttrs
 
-
 举个例子，假如有一个input组件。
 ```html
 // MyInput.vue 组件
@@ -69,6 +68,6 @@ export default{
 跟谁学一面
 :::
 
- 
- <comment-comment/> 
+<comment-comment/> 
+
  

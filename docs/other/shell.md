@@ -51,11 +51,6 @@ bash hello.sh
 这样我们把一些重复执行的操作，写道 shell 中一次性执行，可以提高我们的效率。
 比如，把代码提交给 github 是一个重复的过程。
 
-## 2、常用命令
+<!-- ## 2、常用命令 -->
 
-
-
-
- 
- <comment-comment/> 
- 
+<comment-comment/> 

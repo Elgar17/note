@@ -44,5 +44,3 @@ footer: MIT Licensed | Copyright © 2021 Elǵar
 ## 说明
 
 如果文章过程中发现错误，或者想提交文章欢迎 isuue 或 pr。
-
-<comment-comment/> 

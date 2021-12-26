@@ -19,6 +19,4 @@ Allow: OPTIONS,GET,HEAD,POST
 
 `CORS` 是用于跨域的技术，我们使用 `options` 方法来检测该接口能否跨域请求。
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

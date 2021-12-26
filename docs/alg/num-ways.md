@@ -47,6 +47,4 @@ var numWays = function (n) {
 };
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

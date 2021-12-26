@@ -77,6 +77,4 @@ func WebSocket(w http.ResponseWriter, r *http.Request) {
 
 使用 `for` 循环，让连接一直监听用户发来的消息，使用 `ReadMessage` 方法读取了用户发来的消息，之后使用 `WriteMessage` 方法，将用户用户发来的数据，返回给用户。
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

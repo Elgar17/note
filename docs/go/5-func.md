@@ -192,12 +192,7 @@ end
 2
 1
 ```
-<<<<<<< HEAD
-
- 
- <comment-comment/> 
- 
-=======
 
 `defer` 后面的语句会添加到一个栈中，先进的后执行，从栈的最顶部开始执行。
->>>>>>> 2a5365a7fd08914b73b0ac8b87aaa9f8c3816f39
+
+<comment-comment/> 

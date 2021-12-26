@@ -60,6 +60,4 @@ nrm use taobao
 nrm add mypm www.mypm.com/mypm 
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

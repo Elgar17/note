@@ -47,6 +47,5 @@ var getKthFromEnd = function (head, k) {
 链接：https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/
 来源：力扣（LeetCode）
 
- 
- <comment-comment/> 
+<comment-comment/> 
  

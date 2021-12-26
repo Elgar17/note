@@ -21,6 +21,4 @@ sessionId 首先在服务端生成，发送给用户，用户第二次请求时�
 
 Cookie 是保存在浏览器中的一串字符，用于保存服务器发来的 Session。
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

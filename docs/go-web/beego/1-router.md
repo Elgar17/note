@@ -54,6 +54,4 @@ func (c *TodoController) GetList() {
 beego.Include(&controllers.TodoController{})
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

@@ -54,6 +54,4 @@ Array.prototype.myReduce = function (cb) {
 }
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

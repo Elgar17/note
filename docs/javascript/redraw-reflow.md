@@ -38,6 +38,4 @@ Render树：加载完 `CSS`，`JS` 以后具体计算每个盒子在窗口中的
 
 （5）不要使用table布局，因为一个小改动可能会造成整个table重新布局。而且table渲染通常要3倍于同等元素时间
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

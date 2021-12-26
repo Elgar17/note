@@ -12,6 +12,5 @@ function _new(fn, ...args) {
 }
 ```
 
- 
- <comment-comment/> 
+<comment-comment/> 
  

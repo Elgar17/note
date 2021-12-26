@@ -26,6 +26,4 @@ function bubbleSort(arr) {
 }
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

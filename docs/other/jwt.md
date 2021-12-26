@@ -16,7 +16,7 @@ signature
 
 JWT 可以防止 CSRF 攻击，适合移动应用，不像 session，不用在服务器端保存数据，加密传输安全性高。
 
-[jwt.io](jwt.io) 是一个在线解析 jwt 的网站，  
+[jwt.io](jwt.io) 是一个在线解析 jwt 的网站。
 
 （1）header
 
@@ -82,6 +82,5 @@ jwt.verify(token, "hIKT")
 - 安全性相对高，不存在 csrf，需要防范XSS
 - 性能：传输性能比session 低，到服务器是不用查询数据库
 - 时效性：没有比session 好，服务器端不能清楚，只能等到过期时间
- 
- <comment-comment/> 
- 
+
+<comment-comment/> 

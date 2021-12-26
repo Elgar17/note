@@ -47,6 +47,4 @@ for(let i of arr){
 }
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

@@ -57,6 +57,5 @@ GET 请求和 POST 请求的有一下
 GET 产生一个 TCP 数据包，POST 产生两个 TCP 数据包。
 
 GET 请求的参数在URL 中，没有 Body，一次能发送出去，对于POST，浏览器先发送 header ，服务器响应100 continue，在发送参数。
- 
- <comment-comment/> 
- 
+
+<comment-comment/> 

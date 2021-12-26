@@ -68,6 +68,4 @@ myMap["apple"] = 10
 2. make 只用于slice、map、channel 的初始化，返回引用类型的本身。
 3. new 用于类型的内存分配，并且内存对应的值为类型零值，返回的是指向类型的指针。
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

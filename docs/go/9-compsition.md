@@ -67,6 +67,4 @@ type student struct {
 s1.score.prtnMath() // 56
 ```
 
- 
- <comment-comment/> 
- 
+<comment-comment/> 

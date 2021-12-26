@@ -1,11 +1,5 @@
 # interface
 
-<<<<<<< HEAD
-中文叫接口，
- 
- <comment-comment/> 
- 
-=======
 Inteface 叫接口，Go 语言中的一个数据类型，它定义结构体中的共性方法。
 
 几个例子，如果两个结构体有共同的一个 Say 方法，那可可以定义一个 Say 的接口，这两个结构体继承这个方法就行，这样做的目的是面向对象编程。
@@ -42,4 +36,6 @@ func (d dog) Say() {
 d := dog{}
 d.Say() // wang
 ```
->>>>>>> 2a5365a7fd08914b73b0ac8b87aaa9f8c3816f39
+
+<comment-comment/> 
+ 
