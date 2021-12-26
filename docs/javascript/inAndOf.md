@@ -1,4 +1,4 @@
-# javascript中的 in 和 of 的区别
+# for in 和 for of 
 
 ## 1. for...in
 
