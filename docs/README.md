@@ -17,29 +17,29 @@ footer: MIT Licensed | Copyright © 2021 Elǵar
 
 （1）算法与数据结构（JavaScript实现）
 
-- [🍉 算法](https://kz321.top/docs/docs/alg/binary-search.html)
+- [🍉 算法](https://kz321.top/docs/alg/binary-search.html)
 - [📈 数据结构](https://kz321.top/docs/docs/alg/)
 
 （2）前端
 
-- [🎨 HTML、CSS](https://kz321.top/docs/docs/html-css/)
-- [🥕 JavaScript、TypeScript](https://kz321.top/docs/docs/javascript/)
-- [🧮 Vue.js](https://kz321.top/docs/docs/vue/)
+- [🎨 HTML、CSS](https://kz321.top/docs/html-css/)
+- [🥕 JavaScript、TypeScript](https://kz321.top/docs/javascript/)
+- [🧮 Vue.js](https://kz321.top/docs/vue/)
 
 （3）后端
 
-- [🐹 Golang](https://kz321.top/docs/docs/go/)
-- [🕸 Node.js](https://kz321.top/docs/docs/node/)
-- [🐸 Java](https://kz321.top/docs/docs/java/)
+- [🐹 Golang](https://kz321.top/docs/go/)
+- [🕸 Node.js](https://kz321.top/docs/node/)
+- [🐸 Java](https://kz321.top/docs/java/)
 
 （4）其他
 
-- [🎾 Network](https://kz321.top/docs/docs/network/)
-- [🐋 Docker](https://kz321.top/docs/docs/other/docker.html)
-- [📊 MYSQL](https://kz321.top/docs/docs/other/mysql.html)
-- [🥭 MongoDB](https://kz321.top/docs/docs/other/mongodb.html)
-- [🧩 Nginx](https://kz321.top/docs/docs/other/nginx.html)
-- [⌨️ Redis](https://kz321.top/docs/docs/other/redis.html)
+- [🎾 Network](https://kz321.top/docs/network/)
+- [🐋 Docker](https://kz321.top/docs/other/docker.html)
+- [📊 MYSQL](https://kz321.top/docs/other/mysql.html)
+- [🥭 MongoDB](https://kz321.top/docs/other/mongodb.html)
+- [🧩 Nginx](https://kz321.top/docs/other/nginx.html)
+- [⌨️ Redis](https://kz321.top/docs/other/redis.html)
 
 ## 说明
 
