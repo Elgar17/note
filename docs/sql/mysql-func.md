@@ -50,4 +50,7 @@ SELECT MIN(`studentresult`) AS 最小值 FROM result
 UPDATE `md5test` SET pwd=MD5(pwd)
 
 -- 插入数据时加密
+INSERT INTO `user` VALUES('Jerry', MD5('123456'))
 ```
+
+<comment-comment/>

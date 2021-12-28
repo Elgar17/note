@@ -1,6 +1,6 @@
-# 用户鉴权 JWT 与 session
+# 用户鉴权 JWT 与 Session
 
-## 1、JWT 鉴权
+## 1. JWT 鉴权
 
 ![jwt教程](jwt.png)
 
@@ -8,11 +8,9 @@
 
 全称 JSON Web Token , 有以下三部分构成：
 
-```text
-Header
-playload
-signature
-```
+- Header：头部
+- playload：数据部分
+- signature：签名
 
 JWT 可以防止 CSRF 攻击，适合移动应用，不像 session，不用在服务器端保存数据，加密传输安全性高。
 
@@ -24,7 +22,7 @@ header 中有两个字段
 
 typ: token的类型，固定为JWT
 
-alg: 使用的 hash 算法，HMAC　SHA256
+alg: 使用的 hash 算法，HMAC SHA256
 
 （2）playload
 
@@ -59,6 +57,9 @@ jwt.verify(token, "hIKT")
 
 ## 2. Session 鉴权
 
+待更新...
+<!-- TODO -->
+
 ## 3. 比较
 
 （1）session
@@ -83,4 +84,8 @@ jwt.verify(token, "hIKT")
 - 性能：传输性能比session 低，到服务器是不用查询数据库
 - 时效性：没有比session 好，服务器端不能清楚，只能等到过期时间
 
-<comment-comment/> 
+参考链接：
+
+- [前后端接口鉴权全解](https://segmentfault.com/a/1190000039303557)
+
+<comment-comment/>

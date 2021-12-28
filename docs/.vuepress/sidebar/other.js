@@ -1,26 +1,15 @@
 module.exports = [
 {
-    title: 'Linux ',
+    title: '其他',
     children: [
         '',
         'linux',
-        'shell'
-    ],
-},
-{
-    title: '运维',
-    children: [
-        'mysql',
-        'mongodb',
+        'shell',
+        'jwt',
         'redis',
         'nginx',
-        'docker'
+        'docker',
+        'opnecource'
     ],
 }
-// {
-//     title: '全栈项目',
-//     children: [
-//         '11-Env',
-//     ],
-// },
 ]

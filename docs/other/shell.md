@@ -1,5 +1,7 @@
 # shell 入门
 
+## 1. 概述
+
 最近接触 vuepress 时发现一个 `.sh` 结尾的文件。
 
 打开看了一下，里面有一些自己认识的命令，像这样。
@@ -12,17 +14,15 @@ git add -A
 git commit -m 'deploy'
 ```
 
-对于我这样前端程序员来说，是很少接触 Liunx 的，前端程序员也有必要了解一下 shell 脚本 。
+对于前端程序员来说，是很少接触 Liunx 的，我觉得前端程序员也有必要了解一下 shell 脚本，因为它可以提高开发效率 。
 
 那么，什么是 shell 脚本呢？
 
-
 > Shell 是一个用 C 语言编写的程序，它是用户使用 Linux 的桥梁。Shell 既是一种命令语言，又是一种程序设计语言。 - 菜鸟教程
 
-这里只介绍 Bash 中的 shell 脚本， Bash是一个命令处理器，windows 下的 Git Bash 就是运行 shell 的一个环境，也是这里要讲的。
+这里只介绍 Bash 中的 shell 脚本， Bash 是一个命令处理器，windows 下的 Git Bash 就是运行 shell 的一个环境，也是这里要讲的。
 
-
-## 1、hello shell
+## 2. hello shell
 
 这里以 windows 下的 Git Bash 为例。
 
@@ -34,7 +34,6 @@ git commit -m 'deploy'
 echo "hello shell" > foot.txt
 ```
 
-
 之后再此处打开 git bash ，输入以下内容，运行这个 shell 脚本, bash 后面跟一个文件路径。
 
 ```bash
@@ -42,7 +41,6 @@ bash hello.sh
 ```
 
 ![hello shell](hello-shell.gif)
-
 
 `echo` 是向窗口输出文本的命令，输出的就是 “” 内的内容，这里是 "hello shell"。
 

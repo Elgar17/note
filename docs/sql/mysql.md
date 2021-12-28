@@ -2,7 +2,7 @@
 
 ![mysql](mysql.jpg)
 
-## 数据库介绍
+## 概述
 
 数据库是什么？
 
@@ -454,4 +454,4 @@ DESC `student` -- 查看表的结构
 
 - [为什么需要数据库](https://www.zhihu.com/question/24088008)
 
-<comment-comment/> 
+<comment-comment/>

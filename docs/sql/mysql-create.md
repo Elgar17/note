@@ -164,7 +164,7 @@ DELETE FROM `user` WHERE user_id=10
 TRUNCATE `user`
 ```
 
-不同点，TRUNCATE 会清零自增，       
+不同点，TRUNCATE 会清零自增。
 
 ## 数据表示的类型
 

@@ -219,7 +219,7 @@ docker rm -f [容器id]
 docker rmi -f $(docker images -aq)
 ```
 
-## 5、数据卷
+## 5. 数据卷
 
 **（1）什么是数据卷？**
 
@@ -240,9 +240,9 @@ docker run -d -v [主机目录]:[容器目录] -p 10050:8088 mysql
 
 这个很有用，比如我们需要配置 `nignx`  的文件的话。就映射到主机中，直接添加配置就可以了，容器内自动同步。
 
-**（2）匿名挂载，具名挂载**
+（2）匿名挂载，具名挂载
 
-通过`-v [主机目录]:[容器目录] ` 格式挂载的文件叫匿名挂载
+通过 `-v [主机目录]:[容器目录]` 格式挂载的文件叫匿名挂载
 
 ```bash
 # 查看卷的对应文件:
@@ -251,12 +251,10 @@ docker volume ls
 
 会显示对应是 hash
 
-```
+```bash
 DRIVER    VOLUME NAME
 local     sdfakldsjflajsdlkfjlajsdflkk
 ```
-
-
 
 具名挂载的格式如下：
 
@@ -277,17 +275,13 @@ local     blogSqlData
 docker volume inspect blogSqlData
 ```
 
-
-
-
-
-## 6、docker-compose
+## 6. docker-compose
 
 实现 docker 集群的快速编排。
 
 可以管理多个容器的配置，运行循序等。
 
-**（1）安装**
+（1）安装
 
 ```bash
 # 安装 docker compose
@@ -299,14 +293,13 @@ chmod +x /usr/local/bin/docker-compose
 # 查看版本
 docker-compose -v
 ```
+
 `curl` 参数说明:
 
 - `-L` : 下载地址(url)
 - `-o`: 把输出写到该文件中，必须输入保存文件名
 
- 
-
-**（2）配置文件**
+（2）配置文件
 
 通过 docker-compose 控制多个服务，首先需要配置 一个 `yml` 文件。
 
@@ -333,7 +326,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: 981102
 ```
 
-**（3）启动**
+（3）启动
 
 **先切换到 存放`docker-compose.yml` 文件的目录，**然后使用此命令，启动
 
@@ -351,11 +344,9 @@ docker-compose rm
 docker-compose ps
 ````
 
+## 7. 进入容器，拷贝文件
 
-
-## 7、进入容器，拷贝文件
-
-**（1）进入容器**
+（1）进入容器
 
 进入 docker 容器就是，比如我们安装一个 MongoDB 数据库容器，用命令行进入容器内，进行**查看数据，查看文件存放那根目录，修改配置**等操作。
 
@@ -377,7 +368,7 @@ exit
 - `-it` ：使用交互模式
 - `bash`：使用终端打开
 
-**（2）拷贝文件**
+（2）拷贝文件
 
 拷贝文件是，将 docker **容器中的文件拷贝到主机上**
 
@@ -386,9 +377,7 @@ exit
 docker cp 容器id:容器内路径 目的主机路径
 ```
 
-
-
-## 8、docker 仓库
+## 8. docker 仓库
 
 先到 docker hub 注册账号之后，安装docker 的服务器上登录：
 
@@ -412,4 +401,4 @@ rm -rf /var/lib/docker
 # 资源放置目录 /var/lib/docker
 ```
 
-<comment-comment/> 
+<comment-comment/>
