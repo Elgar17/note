@@ -38,4 +38,35 @@ ROLLBACK
 SET autocommit = 1 -- 开启，默认值
 ```
 
+一个完整的转账例子。
+
+```sql
+-- 创建数据库
+CREATE DATABASE shop CHARACTER SET utf8 COLLATE utf8_general_ci
+USE shop
+
+-- 创建表
+CREATE TABLE `acount` (
+    `id` INT(3) NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(40) NOT NULL,
+    `mony` DECIMAL(9,2) NOT NULL,
+    PRIMARY KEY(`id`)
+)ENGINE=INNODB DEFAULT CHARSET=utf8
+
+-- 插入数据
+INSERT INTO account(`name`, `mony`) VALUES ("Tom","1000"), ("Jerry","2000")
+
+-- 模拟转账
+SET autocommit = 0; -- 关闭自动提交
+START TRANSACTION
+
+UPDATE account SET mony=mony-500 WHERE `name` = "Tom"
+UPDATE account SET mony=mony+500 WHERE `name` = "Jerry"
+
+COMMIT; -- 提交
+ROLLBACK; -- 回滚
+
+SET autocommit = 1;
+```
+
 <comment-comment/>

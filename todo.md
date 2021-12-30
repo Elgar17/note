@@ -1,13 +1,15 @@
 # TODO
 
-个人待办事项
+ 2022 个人学习安排。
 
-- [非常重要] MySQL 学习：60%
-- [重要] 完善 Go 笔记基础：96%，错误处理
-- [重要] 学习 Go 实战项目: 5%
-- [重要] Go 语言实现比特币：0% [网址](https://learnblockchain.cn/books/enterprise/01%20preface.html)
-- [一般] 刷 LeetCode
+1. 🚀 MySQL 学习：75%
+1. 🛫 Go 实战项目: 5%，初始化项目
+1. 🚄 Go 语言实现比特币：0%
+1. 🚄 完善 Go 笔记基础：96%，错误处理
+1. 🚄 维护 kz321: 100%
+1. 🚜 刷 LeetCode：整理刷过的题
 
 书单：
 
 - 精通比特币
+- [企业级区块链实战教程](https://learnblockchain.cn/books/enterprise/01%20preface.html)
