@@ -177,7 +177,7 @@ C:\soft\mysql-8\bin>
 
 之后启动时，先运行服务，之后登录即可。
 
-```mysql
+```sql
 net start mysql
 mysql -u root -p123456
 ```
@@ -231,7 +231,7 @@ SQL 语句中，`--` 表示注释，sql 语言不区分大小写。
 
 （1）基本命令
 
-```mysql
+```sql
 -- 连接数据库
 mysql -u root -p123456
 
@@ -249,7 +249,7 @@ exit
 
 显示表中所有元素
 
-```mysql
+```sql
 -- 查看所有数据库
 show databases;
 
@@ -265,7 +265,7 @@ describe student;
 
 （3）创建表
 
-```mysql
+```sql
 -- 创建数据库[创建失败不会退出]
 create database [if not exists] blog;
 
@@ -276,7 +276,7 @@ drop database [if exists] blog;
 
 （2）增加数据
 
-```mysql
+```sql
 -- 增加两条数据
 insert into users(username,`password`,realname) values ('Tom','123','汤姆');
 insert into users(username,`password`,realname) values ('Jerry','456','杰瑞');
@@ -284,7 +284,7 @@ insert into users(username,`password`,realname) values ('Jerry','456','杰瑞');
 
 （3）查询
 
-```mysql
+```sql
 -- 查询全部
 select * from users where state='1';
 
@@ -300,7 +300,7 @@ select * from users where username like '%J%';
 
 （4）更新
 
-```mysql
+```sql
 -- 更新
 -- SET SQL_SAFE_UPDATES=0;
 -- update users set state='0' where username="Jerry";
@@ -308,7 +308,7 @@ select * from users where username like '%J%';
 
 （5）删除
 
-```mysql
+```sql
 -- 删除
 delete from users where username='Jerry'
 ```

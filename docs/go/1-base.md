@@ -166,7 +166,7 @@ fmt.Println("hello \n Go!")
 
 显示结果如下， `\n` 换成了换行。
 
-```text
+```bash
 hello 
  Go!
 ```

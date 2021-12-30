@@ -1,4 +1,4 @@
-# MongoDB
+# MongoDB 快速入门
 
 ![mongo](mongodb.jpg)
 

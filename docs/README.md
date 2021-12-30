@@ -36,8 +36,7 @@ footer: MIT Licensed | Copyright © 2021 Elǵar
 
 - [🎾 Network](https://kz321.top/docs/network/)
 - [🐋 Docker](https://kz321.top/docs/other/docker.html)
-- [📊 MYSQL](https://kz321.top/docs/other/mysql.html)
-- [🥭 MongoDB](https://kz321.top/docs/other/mongodb.html)
+- [📊 数据库](https://kz321.top/docs/sql/)
 - [🧩 Nginx](https://kz321.top/docs/other/nginx.html)
 - [⌨️ Redis](https://kz321.top/docs/other/redis.html)
 

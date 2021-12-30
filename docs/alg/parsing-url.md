@@ -4,7 +4,7 @@
 
 ## 1、描述
 
-```text
+```bash
 输入：https://www.baidu.com?&ie=utf-8&wd=vue
 
 输出：{ie: "utf-8", wd: "vue"}

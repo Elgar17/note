@@ -62,12 +62,8 @@ module.exports = [ //导航栏
                 link: '/network/'
             },
             {
-                text: 'MySQL',
-                link: '/other/mysql.html'
-            },
-            {
-                text: 'Mongodb',
-                link: '/other/mongodb.html'
+                text: '数据库',
+                link: '/sql/'
             },
             {
                 text: 'Redis',

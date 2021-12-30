@@ -67,7 +67,7 @@ func syncfunc(s string) {
 
 运行结果:
 
-```text
+```bash
 主线程
 异步线程
 主线程结束

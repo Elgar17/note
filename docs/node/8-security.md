@@ -6,7 +6,7 @@
 
 输入 SQL 代码，在服务器上运行
 
-```mysql
+```sql
 select username, realname from users 
 where username='${name}' and password='${password}'
 ```

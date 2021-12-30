@@ -29,7 +29,7 @@ Go 语言中有两个重要的目录：
 
 检测 `GOROOT` 有没有添加成功，在 `path` 中还要添加 `GOBIN` 目录。
 
-```text
+```bash
 C:\Users\think>go version
 go version go1.16 windows/amd64
 ```

@@ -8,6 +8,7 @@ const alg = require('./alg')
 const java = require('./java')
 const go = require('./go')
 const goWeb = require('./go-web')
+const sql = require('./sql')
 
 module.exports = {
     '/html-css/': htmlCss,
@@ -19,5 +20,6 @@ module.exports = {
     '/alg/': alg,
     '/java/': java,
     '/go/': go,
-    '/go-web/': goWeb
+    '/go-web/': goWeb,
+    '/sql/': sql
 }
