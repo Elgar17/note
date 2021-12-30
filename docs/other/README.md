@@ -1,13 +1,10 @@
 # 目录
 
-## 💻 Linux 
+一些文章开发相关文章
+
 1. [Linux 入门](./linux.md)
-2. [shell 入门](./shell.md)
-
-## 🔨 运维
-1. [MySQL 入门](./mysql.md)
-1. [Redis 入门](./redis.md)
-3. [Nginx  入门](./nginx.md)
-3. [docker 入门](./docker.md)
-
-<comment-comment/> 
+1. [shell 入门](./shell.md)
+1. [Redis 快速入门](./redis.md)
+1. [Nginx  快速入门](./nginx.md)
+1. [docker 快速入门](./docker.md)
+1. [如何做开源项目？](./opnecource.md)

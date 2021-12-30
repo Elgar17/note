@@ -160,4 +160,19 @@ SELECT * FROM `user` ORDER BY id ASC LIMIT 0,5
 where( select * from)
 ```
 
+## 分组
+
+查询结果后使用 group by 进行分组。
+
+```sql
+SELECT any_value(`subjectname`), AVG(`studentresult`)
+FROM `result` r
+INNER JOIN `subject` s
+ON r.`subjectno`=s.`subjectno`
+GROUP BY r.`subjectno`
+HAVING AVG(`studentresult`)>57
+```
+
+这里 avg 函数是计算平均分。这个例子查询的是，计算每个科目的平均分，最后过滤平均分小于 57 分的。
+
 <comment-comment/>

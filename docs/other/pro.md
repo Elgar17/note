@@ -1,34 +1,25 @@
 # 全栈项目
 
-
-
 | 开发日志                                              | 时间       |
 | ----------------------------------------------------- | ---------- |
 | 1. 需求分析                                           | 2021.02.12 |
 | 2. 购买服务器                                         | 2021.02.12 |
 | 3. 安装 docker && docker-compose                      | 2021.02.12 |
-| 4. 安装 mongoDB 数据库                                | 2021.02.13 |
+| 4. 安装 mongoDB 数据库                                 | 2021.02.13 |
 | 5. Mock服务 DOClever && Mock.js                       | 2021.02.13 |
-| 6. 开发前后端注册，登陆，重置密码页面，发送邮件服务等 | 2021.02.14 |
-| 7. 学习 Linux 系统，文件目录，                        | 2021.02.15 |
+| 6. 开发前后端注册，登陆，重置密码页面，发送邮件服务等     | 2021.02.14 |
+| 7. 学习 Linux 系统，文件目录，                         | 2021.02.15 |
 | 8. 学习docker && docker-compose                       | 2021.02.16 |
 | 9. 学习 MongoDB 数据库                                | 2021.02.17 |
 | 10. 学习，安装 redis                                  | 2021.02.22 |
 | 11. 配置 数据库                                       | 2021.02.27 |
 | 12. 完成登录操作                                      | 2021.02.28 |
 
-
-
-##  1、需求分析
-
-
+## 1. 需求分析
 
 - 全栈思维，需求分析重难点
 - 案例项目需求分析，业务拆解，功能拆解
 - 工具使用及场景
-
-
-
 
 工作流：
 
@@ -38,14 +29,11 @@
 - 跟踪项目，反馈，更变
 
 
-
-
 设计网站：
 
 - 酷站
 - 蓝色理想
--  花瓣
-
+- 花瓣
 
 pc端需求分析：
 
@@ -53,16 +41,11 @@ pc端需求分析：
 - 点赞回复
 - 积分与用户体系  
 
-
-
-
 服务端需求分析：
 
 - 用户，权限管理
 - 内容管理，首页管理
 - 其他功能
-
-
 
 移动端需求分析：
 
@@ -70,40 +53,28 @@ pc端需求分析：
 - 技术实现/交互体样
 - 用户数据/流量入口
 
-
 文档产出：
 
 - 重要页面原型图
 - 主题页面流程图与跳转逻辑
 
+## 2. 搭建环境
 
-## 2、 搭建环境
-
-
-搭建测试环境 
+搭建测试环境
 
 ### 服务器安装 Docker
-
-
 
 安装：
 
 ```bash
-
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ```
 
-
-
-安装 docker compose 
-
-
+安装 docker compose
 
 Compose 是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。
 
-
 ```bash
-
 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
@@ -122,12 +93,15 @@ mkdir docker
 
 vi /etc/docker/daemon.json
 ```
+
 添加如下配置：
+
 ```json
 {
     "registry-mirrors": ["http://hub-mirror.c.163.com"]
 }
 ```
+
 重启docker
 
 ```bash
@@ -140,13 +114,9 @@ service docker restart
 docker-compose --version
 ```
 
+### 安装 MongoDB 服务器
 
-
-### 安装MongoDB 服务器
-
-
-
-到docker hub 安装
+到 docker hub 安装
 
 ```docker
 docker pull mongo:4
@@ -160,7 +130,7 @@ docker images
 
 docker 运行 mongo 服务
 
-```
+```bash
 docker run -d --name some-mongo -p 10050:27017 mongo:4
 ```
 
@@ -169,7 +139,6 @@ docker run -d --name some-mongo -p 10050:27017 mongo:4
 ```docker
 docker ps
 ```
-
 
 开放端口：
 
@@ -195,8 +164,4 @@ fire-wall --state
 
 实用robo 3t 登录，ip 实用服务器公网ip
 
-
-
-## 3、鉴权
-
- 
+## 3. 鉴权

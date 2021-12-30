@@ -4,7 +4,6 @@
 
 MongoDB 是非关系型数据库（NoSQL）。
 
-
 核心概念：
 
 | Mysql         | MongoDB          | Mongoose                 |
@@ -16,7 +15,7 @@ MongoDB 是非关系型数据库（NoSQL）。
 | Primary key   | Object(_id)      | Object(_id)              |
 | 表字段 column | Field            | Field                    |
 
-推荐一个图形化工具：robo3t 
+推荐一个图形化工具：robo3t
 
 ## 1、安装
 
@@ -31,7 +30,7 @@ docker pull mongo:4
 ```json
 version: "3"
 services:
-  blog-db:		 # 容器名字
+  blog-db:       # 容器名字
     image: mongo # 镜像名:版本
     ports:
       - "10050:27017" # 外部端口：docker 端口
@@ -56,7 +55,7 @@ mongo
 
 进入之后，我们查看数据库。
 
-**（1）查看**
+（1）查看
 
 ```bash
 show bds
@@ -64,15 +63,13 @@ show bds
 
 会显示以下三个数据库：
 
-```
-admin
-local
-config
-```
+- admin
+- local
+- config
 
 这是查看数据库列表的命令，默认有三个数据库。每一个叫做一个数据库(database)。
 
-**（2）操作数据库**
+（2）操作数据库
 
 下面我们操作数据库,使用`use` 命令。
 
@@ -85,26 +82,26 @@ use blog
 
 到了一个重要的环节，那就是删除数据库，使用 `use` 命令，**先切换到对应的数据库**，适应以下命令：
 
-```
+```sql
 db.dropDatabase()
 ```
 
-**（3）集合的操作**
+（3）集合的操作
 
 切换到数据库之后，创建**集合**。我们创建了 blog 的数据库，现在我们需要创建一个存放用户名和密码的一个集合。可能很抽象，举个例子：
 
 ```json
 # 这个就是一个集合
-{
+[
     {
-    	"name": "zhangsan",
-    	"psd": 1234
+        "name": "zhangsan",
+        "psd": 1234
     },
-	{
-    	"name": "lisi",
-    	"psd": 12345
+    {
+        "name": "lisi",
+        "psd": 12345
     }
-}
+]
 ```
 
 使用以下命令创建集合和删除集合的命令，下面是创建了一个 `users` 的集合，因为我们在 `blog` 数据库中操作的，所以 `users` 集合属于 `blog` 数据库。
@@ -120,15 +117,11 @@ db.users.drop()
 show collections
 ```
 
-
-
-
-
-## 3、数据库权限机制
+## 3. 数据库权限机制
 
 开启权限机制之后，用户登录之后才可以读写数据。
 
-**（1）添加超级管理员**
+（1）添加超级管理员
 
 ```js
 use admin
@@ -142,21 +135,13 @@ db.createUser({
 }
 ```
 
-
-
-
-
-## 4、使用 Node.js 增删改查
-
-
+## 4. 使用 Node.js 增删改查
 
 安装数据库
 
 ```bash
 npm i mongoose
 ```
-
-
 
 快速开始
 
@@ -186,9 +171,7 @@ kitty.save().then(() => console.log('保存成功过'));
 
 ```
 
-
-
-增删改查
+下面是数据库增删改查的例子。
 
 ```javascript
 //  使用uses的数据了, 新增数据
@@ -262,4 +245,4 @@ User.findByIdAndUpdate('5e133352576f301ab06d0f5d', {
 })
 ```
 
-<comment-comment/> 
+<comment-comment/>

@@ -19,12 +19,4 @@ React 是 JavaScript 框架，让开发者快速开发生成自己的应用。�
 
 ```
 
- 
- <comment-comment/> 
- 
- 
- <comment-comment/> 
- 
- 
- <comment-comment/> 
- 
+<comment-comment/>
