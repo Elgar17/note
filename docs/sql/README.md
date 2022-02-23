@@ -9,6 +9,7 @@
 1. [数据库查询语句](./mysql-dql.md)
 1. [数据库中的函数](./mysql-fanc.md)
 1. [数据库中的事务](./mysql-transaction.md)
+1. [数据库管理](./mysql-user.md)
 
 （2）MongoDB
 

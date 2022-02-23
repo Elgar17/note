@@ -2,7 +2,7 @@
 
 ## 查询语句完整语法
 
-这里是一个完整的查询语句的模板，先不用看。
+这里是一个完整的查询语句的模板，先不用看，只后解释。
 
 ```sql
 SELECT[ALL|DISTINCT|DISTINCTROW|TOP]
@@ -23,7 +23,7 @@ FROM tableexpression[,…][IN externaldatabase]
 SELECT `stu_no`,`name` FROM student
 ```
 
-还可以查询 MySQL 版本
+还可以查询 MySQL 版本。
 
 ```sql
 SELECT VERSION() -- 8.0.5
@@ -40,11 +40,24 @@ SELECT DISTINCT `stu_no`  FROM `result`
 
 ## Where 条件字句
 
-通过 Where 语句可以筛选符合我们条件的数据。
+通过 Where 语句可以筛选符合我们条件的数据，下面时一个简单的应用。
+
+```sql
+-- 从 student 表中选择 age 字段为 20 的学生
+SELECT * FROM `student` WHERE `age`=20
+```
+
 
 （1）逻辑
 
-- and 或 &&：两个为真
+使用逻辑运算符将多个条件连接起来。
+
+```sql
+-- 选择年龄在 12 ~ 20 的学生
+SELECT * FROM `student` WHERE `age`>12 && `phone`<20
+```
+
+- and 或 &&：两个都为真
 - or 或 ||：一个为真
 - Not 或 !：非
 

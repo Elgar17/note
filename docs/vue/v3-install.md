@@ -1,6 +1,6 @@
 ## vue3 使用
 
-
+vue3 的基础模板。
 
 ```html
 <template>
@@ -59,17 +59,13 @@ export default {
 
 
 
-声明周期
+## 声明周期
 
-
-
-```
-beforeCreate
-```
+下面时 vue2 与 vue3 的声明周期函数的比较。
 
 | vue2          | vue3             | 触发时机 |
 | ------------- | ---------------- | -------- |
-| beforeCreate  | use setup        |          |
+| beforeCreate  | use setup        |  创建前   |
 | created       | use setup        |          |
 | beforeMount   | onBeforeMount    |          |
 | mounted       | onMounted        |          |

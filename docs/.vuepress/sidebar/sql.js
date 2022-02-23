@@ -6,7 +6,8 @@ module.exports = [{
         'mysql-dql',
         'mysql-create',
         'mysql-func',
-        'mysql-transaction'
+        'mysql-transaction',
+        'mysql-user'
     ],
 }, {
     title: 'MongoDB',

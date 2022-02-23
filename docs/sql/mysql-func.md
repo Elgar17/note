@@ -1,5 +1,7 @@
 # MySQL 函数
 
+这里回介绍一些 SQL 中常用的函数。
+
 ## 常用函数
 
 ```sql
@@ -43,7 +45,7 @@ SELECT MAX(`studentresult`) AS 最大值 FROM result
 SELECT MIN(`studentresult`) AS 最小值 FROM result
 ```
 
-## md5加密
+## md5 加密函数
 
 ```sql
 -- 加密

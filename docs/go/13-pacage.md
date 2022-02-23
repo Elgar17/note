@@ -69,17 +69,43 @@ func main() {
 
 注意，包对应的文件夹的名与包名（package）必须一致。
 
-## 别名
+## 4. 别名
 
 如果包名太长，可以为包取别名。
 
 ```go
 import (
     "fmt"
-    util "oa/utils"
+    util "oa/utils" // 给包重命名
 )
+```
+
+包只导入不使用
+
+```go
+import _ "surpass/dolphin"
 ```
 
 上面例子是给 "oa/utils" 包取了 util 的别名，之后以 `util.Add(1,2)` 来使用。
 
 <comment-comment/> 
+
+## 5. go modules
+
+Go 语言没有统一的包管理地址，比如像存放 node.js 包管理的 npm，所以大家都放在 github 上。
+
+go module 是在 1.13 版本以后，Go 语言官方推荐的依赖管理解决方案。
+
+module 是所有**包的集合**，使用 `init` 来初始化一个 module，这是在项目根目录下生成 `go.mod` 文件。
+
+```bash
+# 初始化一个库
+go init github.com/EE/Hello
+```
+
+如果在一个项目中使用了多个包，那么这些信息存放在 `go.mod` 文件，我们启动这个项目时，需要先下载这些包的集合，使用 `tidy` 名下载，本项目所有的依赖包。
+
+```bash
+# 下载项目的依赖
+go mod tidy
+```
