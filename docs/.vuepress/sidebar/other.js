@@ -9,7 +9,7 @@ module.exports = [
         'redis',
         'nginx',
         'docker',
-        'opnecource'
+        'opencource'
     ],
 }
 ]
