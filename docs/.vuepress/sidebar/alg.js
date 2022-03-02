@@ -4,24 +4,39 @@ module.exports = [{
         '',
         'd-stack',
         'd-queue'
-    ]
-    },{
-    title: '算法',
+    ]},{
+    title: '排序',
     children: [
         'bubblesot',
-        'quick-sort',
-        "633.judge-square-sum",
-        'binary-search',
-        'num-ways',
-        'coin-change',
-        'max-sub-nums',
-        'longest-palindrome',
-        'parsing-url',
-        'conversion',
-        'k-largest-el',
-        'get-kth-from-end',
-        'chunk',
-        'compare-version',
-        'version-sort'
-    ],
-}]
+        'quick-sort'
+    ]},{
+        title: '双指针',
+        children: [
+            'judge-square-sum'
+        ]
+    },{
+        title: '搜索',
+        children: [
+            'binary-search'
+        ]
+    },{
+        title: '动态规划',
+        children: [
+            'num-ways',
+            'coin-change',
+            'max-sub-nums',
+            'longest-palindrome'
+        ]
+    },{
+        title: "其他",
+        children:[
+            'parsing-url',
+            'conversion',
+            'k-largest-el',
+            'get-kth-from-end',
+            'chunk',
+            'compare-version',
+            'version-sort'
+        ]
+    }
+]

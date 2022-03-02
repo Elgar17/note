@@ -88,8 +88,6 @@ import _ "surpass/dolphin"
 
 上面例子是给 "oa/utils" 包取了 util 的别名，之后以 `util.Add(1,2)` 来使用。
 
-<comment-comment/> 
-
 ## 5. go modules
 
 Go 语言没有统一的包管理地址，比如像存放 node.js 包管理的 npm，所以大家都放在 github 上。
@@ -109,3 +107,5 @@ go init github.com/EE/Hello
 # 下载项目的依赖
 go mod tidy
 ```
+
+<comment-comment/>

@@ -4,6 +4,8 @@
 
 Beego 框架使用教程。
 
+Beego 是 Go 语言 Web 框架，[官网](beego.vip)。
+
 ## 安装 Beego
 
 先安装 Beego 框架。
@@ -18,7 +20,9 @@ bee 是 Beego 工具包，用于创建 Beego 项目，热驱动项目等功能�
 go get github.com/beego/bee
 ```
 
+::: tip 注意
 注意，安装框架前必须设置国内代理，否则会安装失败。
+:::
 
 ## 安装 bee
 
@@ -44,6 +48,8 @@ git config --global http.sslVerify false
 bee version
 ```
 
+## 创建项目
+
 Bee 工具提供了创建项目命令，下面具体介绍。
 
 （1）bee new
@@ -59,6 +65,10 @@ bee new demo1
 （2）bee api
 
 在当前目录下，生成 RESTFUL API 形式的项目模板。
+
+```bash
+bee api projectName
+```
 
 （3）bee run
 
@@ -82,7 +92,7 @@ bee pack -be GOOS=linux
 
 ## 目录介绍
 
-- go.mod，存放项目依赖包的文件
-- go.sum，项目依赖的下载地址
+- go.mod，存放项目依赖包的文件。
+- go.sum，项目依赖的下载地址。
 
 <comment-comment/> 

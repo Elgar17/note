@@ -124,7 +124,7 @@ func getinfo(id int64) *User {
 
 func main() {
     user := getinfo(1)
-    fmt.Println(user) // &{1 鹅鹅鹅}
+    fmt.Println(user) // {1 鹅鹅鹅}
 }
 ```
 
