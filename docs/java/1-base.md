@@ -16,7 +16,7 @@ JVM(Java Virtual Machine)，JAVA虚拟机，在不同平台运行(Linux，Window
 
 上面提到的，解释器就是 JVM。
 
-## 3、JDK 
+## 3、JDK
 
 JDK（Java Development Kit），Java 语言的软件开发包。
 
@@ -40,6 +40,4 @@ JRE（Java Runtime Environment），由两部分组成：
 - Java EE：开发网络，企业版，应用于开发网站
 - Java ME：用于开发移动设备
 
-<comment-comment/> 
- 
- 
+<comment-comment/>

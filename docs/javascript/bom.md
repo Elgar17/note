@@ -15,7 +15,7 @@ location.href
 // https://blog.cn/docs/bom.html#head
 
 location.host // 域名
-// blog.harahozi.cn
+// blog.cn
 
 location.pathname
 // 路径
