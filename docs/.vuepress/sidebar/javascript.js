@@ -16,7 +16,8 @@ module.exports = [{
         'bom',
         'effactive-js',
         'webworker',
-        'fast-js'
+        'fast-js',
+        'npm-pkg'
     ],
 }, {
     title: 'Typescript',

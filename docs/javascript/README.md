@@ -24,6 +24,7 @@
 1. [如何编写高质量 JavaScript 代码](./effactive-js.md)
 1. [多行程 Web Worker 教程](./webworker.md)
 1. [JavaScript 性能优化](./fast-js.md)
+1. [如何包不自己的 npm 包](./npm-pkg.md)
 
 ## 2. Typescript
 
