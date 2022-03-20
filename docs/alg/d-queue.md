@@ -12,38 +12,39 @@
 
 ```js
 function Queue() {
-            // 创建
-            this.items = {};
-            this.count = 0;         // 队列大小
-            this.lowestCount = 0;   // 第一个元素的位置
-            // 方法
-            // 1. 添加(enQueue)
-            Queue.prototype.enQueue = function(elment) {
-                //注意一下， this.items[this.count]相当于this.items.0 现在的items = {0: elment}
-                this.items[this.count] = elment;
-                this.count++;  
-            }
-            // 2. 移除(deQueue)
-            Queue.prototype.deQueue = function() {
-                if((this.count - this.lowestCount) === 0){
-                    return undefined;
-                }
-                var result = this.items[this.lowestCount];
-                delete this.items[this.lowestCount];
-                this.lowestCount++;
-                return result;
-            }
+    // 创建
+    this.items = {}
+    this.count = 0         // 队列大小
+    this.lowestCount = 0   // 第一个元素的位置
+
+    // 1. 添加(enQueue)
+    Queue.prototype.enQueue = function(elment) {
+        //注意一下， this.items[this.count]相当于this.items.0 现在的items = {0: elment}
+        this.items[this.count] = elment
+        this.count++
+    }
+    
+    // 2. 移除(deQueue)
+    Queue.prototype.deQueue = function() {
+        if((this.count - this.lowestCount) === 0){
+            return undefined
         }
+        var result = this.items[this.lowestCount]
+        delete this.items[this.lowestCount]
+        this.lowestCount++
+        return result
+    }
+}
 ```
 
 ### 3. 使用
 
 ```js
-let queue = new Queue();
-queue.enQueue("hi");      // 入队列
-queue.enQueue("hello");   // 入队列
-queue.deQueue();          // 出队列：hi
-queue.deQueue();          // 出队列：hello
+let queue = new Queue()
+queue.enQueue("hi")      // 入队列
+queue.enQueue("hello")   // 入队列
+queue.deQueue()          // 出队列：hi
+queue.deQueue()          // 出队列：hello
 ```
 
  

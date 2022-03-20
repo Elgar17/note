@@ -1,4 +1,4 @@
-# 704. 二分查找
+# 二分查找
 
 ## 1. 描述
 
@@ -85,7 +85,7 @@ func BinarySearch(arr []int, target int, left int, right int) int {
 
 作者：LeetCode-Solution
 链接：[leetcode-cn.com](https://leetcode-cn.com/problems/binary-search/)
-来源：力扣（LeetCode）
+来源：力扣第 704 题（LeetCode）
 
 <comment-comment/> 
 

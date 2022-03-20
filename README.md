@@ -2,34 +2,33 @@
 
 ## 概述
 
-个人的技术博客，博客[地址](https://blog.harahozi.cn/docs/)。
+个人的技术博客，博客[地址](https://www.kz321.top/docs/)。
 
 ## 目录
 
 （1）算法与数据结构（JavaScript实现）
 
-- [🍉 算法](https://blog.harahozi.cn/docs/alg/binary-search.html)
-- [📈 数据结构](https://blog.harahozi.cn/docs/alg/)
+- [🍉 算法](https://www.kz321.top/docs/alg/binary-search.html)
+- [📈 数据结构](https://www.kz321.top/docs/alg/)
 
 （2）前端
 
-- [🎨 HTML、CSS](https://blog.harahozi.cn/docs/html-css/)
-- [🥕 JavaScript、TypeScript](https://blog.harahozi.cn/docs/javascript/)
-- [🧮 Vue.js](https://blog.harahozi.cn/docs/vue/)
+- [🎨 HTML、CSS](https://www.kz321.top/docs/html-css/)
+- [🥕 JavaScript、TypeScript](https://www.kz321.top/docs/javascript/)
+- [🧮 Vue.js](https://www.kz321.top/docs/vue/)
 
 （3）后端
 
-- [🐹 Golang](https://blog.harahozi.cn/docs/go/)
-- [🕸 Node.js](https://blog.harahozi.cn/docs/node/)
-- [🐸 Java](https://blog.harahozi.cn/docs/java/)
+- [🐹 Golang](https://www.kz321.top/docs/go/)
+- [🕸 Node.js](https://www.kz321.top/docs/node/)
 
 （4）其他
 
-- [🐋 Docker](https://blog.harahozi.cn/docs/other/docker.html)
-- [📊 MYSQL](https://blog.harahozi.cn/docs/other/mysql.html)
-- [🥭 MongoDB](https://blog.harahozi.cn/docs/other/mongodb.html)
-- [🧩 Nginx](https://blog.harahozi.cn/docs/other/nginx.html)
-- [⌨️ Redis](https://blog.harahozi.cn/docs/other/redis.html)
+- [🐋 Docker](https://www.kz321.top/docs/other/docker.html)
+- [📊 MYSQL](https://www.kz321.top/docs/other/mysql.html)
+- [🥭 MongoDB](https://www.kz321.top/docs/other/mongodb.html)
+- [🧩 Nginx](https://www.kz321.top/docs/other/nginx.html)
+- [⌨️ Redis](https://www.kz321.top/docs/other/redis.html)
 
 ## 说明
 

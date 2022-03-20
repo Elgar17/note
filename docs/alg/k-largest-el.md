@@ -1,4 +1,4 @@
-# 215. 第k个最大元素
+# 数组中的第K个最大元素
 
 ## 1. 描述
 
@@ -41,5 +41,6 @@ var findKthLargest = function (nums, k) {
 }
 ```
 
+来源：力扣第 215 题（LeetCode）
+
 <comment-comment/> 
- 

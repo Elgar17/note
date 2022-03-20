@@ -1,5 +1,5 @@
 
-# 165. 版本号比较
+# 版本号比较
 
 ## 1.描述
 
@@ -37,7 +37,7 @@ var compareVersion = function (version1, version2) {
 - 空间复杂度：O(n+m)
 
 链接：https://leetcode-cn.com/problems/compare-version-numbers/
-来源：力扣（LeetCode）
+来源：力扣第 165 题（LeetCode）
 
  
 <comment-comment/> 

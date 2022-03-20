@@ -1,4 +1,4 @@
-# 167. 两数之和2
+# 两数之和 II
 
 ## 概述
 
@@ -34,6 +34,6 @@ func twoSum(numbers []int, target int) []int {
 }
 ```
 
-来源：力扣（LeetCode）
+来源：力扣第 167 题（LeetCode）
 
 <comment-comment/> 

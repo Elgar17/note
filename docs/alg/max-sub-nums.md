@@ -1,4 +1,4 @@
-# 53. 最大子序和
+# 最大子序和
 
 ## 1. 描述
 
@@ -45,6 +45,6 @@ var maxSubArray = function (nums) {
 ```
 
 - 链接：https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/
-- 来源：力扣（LeetCode）
+- 来源：力扣第 53 题（LeetCode）
 
 <comment-comment/> 

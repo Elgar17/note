@@ -19,14 +19,16 @@
 
 ```js
 function parseUrl(url){
-    var params = {};
-    var str = url.split("?")[1];
-    var items = str.split("&");
+    var params = {}
+    var str = url.split("?")[1]
+    var items = str.split("&")
+
     for(let i = 0; i < items.length; i++){
-        let arr = items[i].split("=");
-        params[arr[0]] = arr[1];
+        let arr = items[i].split("=")
+        params[arr[0]] = arr[1]
     }
-    return params;
+    
+    return params
 }
 ```
 

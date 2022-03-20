@@ -22,17 +22,17 @@ class LRUCache {
             return
         }
         if (this.size <= this.data.length) {
-            const firstKey = this.data.keys().next().value;
-            this.data.delete(firstKey);
+            const firstKey = this.data.keys().next().value
+            this.data.delete(firstKey)
         }
         this.data.set(domain, info)
     }
 
     get() {
         if (!this.data.has(domain)) return false
-        const info = this.data.get(domain); //获取结果
-        this.data.delete(domain); // 移除数据
-        this.data.set(domain, info); // 重新添加该数据
+        const info = this.data.get(domain)  //获取结果
+        this.data.delete(domain)            // 移除数据
+        this.data.set(domain, info)         // 重新添加该数据
         return info
     }
 }

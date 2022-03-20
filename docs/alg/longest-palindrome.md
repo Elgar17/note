@@ -1,4 +1,4 @@
-# 5. 最长回文子串
+# 最长回文子串
 
 给你一个字符串 s，找到 s 中最长的回文子串。
 
@@ -22,8 +22,9 @@ dp[i][j] = (s[i] == s[j]) and (dp[i + 1][j - 1]) || j - i < 3
 function maxStr(s) {
     if (s.length <= 1) return s
     let dp = []
-    let begin = 0;
-    let max = 1;
+    let begin = 0
+    let max = 1
+    
     for (let i = 0; i < s.length; i++) {
         dp[i] = []
         dp[i][i] = true
@@ -52,6 +53,6 @@ function maxStr(s) {
 ```
 
 链接：https://leetcode-cn.com/problems/longest-palindromic-substring/
-来源：力扣（LeetCode）
+来源：力扣第 5 题（LeetCode）
 
 <comment-comment/> 

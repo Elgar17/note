@@ -32,10 +32,6 @@ module.exports = [ //导航栏
                 link: '/go-web/'
             },
             {
-                text: 'Java',
-                link: '/java/'
-            },
-            {
                 text: 'Node.js',
                 link: '/node/'
             }

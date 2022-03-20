@@ -18,8 +18,7 @@ module.exports = {
     // 添加百度统计
     [
       "script",
-      {
-      },
+      {},
       `var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement("script");
@@ -27,18 +26,32 @@ module.exports = {
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
       })();`
-    ]
+    ],
+    ['meta', {
+      name: 'keywords',
+      content: '专注于 Vue 和 Go 语言'
+    }]
   ],
-  description: 'Go 语言全栈笔记', //描述
+  description: '专注于 Vue 和 Go 语言', // 描述
   dest: './dist', // 设置输出目录
-  port: 2233, //端口
+  port: 2233, // 端口
 
-  themeConfig: { //主题配置
+  themeConfig: { // 主题配置
     lastUpdated: '更新时间', // string | boolean
-    // 添加导航栏
-    nav: Nav,
-    // 为以下路由添加侧边栏
-    sidebar: Sidebar,
+    nav: Nav, // 添加导航栏
+    sidebar: Sidebar, // 为以下路由添加侧边栏
     darkMode: true
+  },
+  plugins: {
+    'sitemap': {
+      hostname: "http://www.kz321.com/docs",
+      // 排除无实际内容的页面
+      exclude: ["/404.html"]
+    },
+    'robots': {
+      host: "http://www.kz321.com/docs",
+      disallowAll: true,
+      sitemap: "/sitemap.xml",
+    }
   }
 }

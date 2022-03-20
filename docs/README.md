@@ -30,7 +30,6 @@ footer: MIT Licensed | Copyright © 2021 Elǵar
 
 - [🐹 Golang](https://kz321.top/docs/go/)
 - [🕸 Node.js](https://kz321.top/docs/node/)
-- [🐸 Java](https://kz321.top/docs/java/)
 
 （4）其他
 

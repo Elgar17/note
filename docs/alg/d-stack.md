@@ -18,27 +18,27 @@ function Stack() {
     this.items = [];
     // 1.添加
     Stack.prototype.push = function (elment) {
-        this.items[this.items.length] elment;
+        this.items[this.items.length] elment
     }
     // 2.删除
     Stack.prototype.pop = function () {
-        this.items.pop();
+        this.items.pop()
     }
     // 3.栈顶元素
     Stack.prototype.topElment = function () {
-        return this.items[this.items.length 1];
+        return this.items[this.items.length 1]
     }
     // 4.判断是否空
     Stack.prototype.isEmpty = function () {
-        return this.items.length === 0;
+        return this.items.length === 0
     }
     // 5.大小
     Stack.prototype.length = function () {
-        return this.items.length;
+        return this.items.length
     }
     // 6.将栈结构以字符串返回
     Stack.prototype.toString = function () {
-        return  this.items.join("");
+        return  this.items.join("")
     }
 }
 ```
@@ -46,7 +46,8 @@ function Stack() {
 ## 3. 应用
 
 ```js
-var s = new Stack();             // 初始化
+var s = new Stack() // 初始化
+
 // 添加元素
 s.push(26)
 s.push(37)
@@ -60,7 +61,7 @@ s.pop();          // 出栈 25
 
 s.items           // [26, 37, 28, 28]
 
-s.topElment();    // 28
+s.topElment()     // 28
 
 s.isEmpty()       // false
 

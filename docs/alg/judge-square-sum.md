@@ -1,4 +1,6 @@
-# 633. 平方数之和
+# 平方数之和
+
+
 
 ## 概述
 
@@ -31,6 +33,6 @@ func judgeSquareSum(c int) bool {
 }
 ```
 
-来源：力扣（LeetCode）
+来源：力扣第 633 题（LeetCode）
 
 <comment-comment/> 

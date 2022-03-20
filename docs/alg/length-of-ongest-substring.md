@@ -14,6 +14,7 @@ var lengthOfLongestSubstring = function (s) {
     let right = 0 // 窗口右侧
     let left = 0  // 窗口左侧
     let max = 0   // 保存数据结构
+    
     while(right < s.length){
         // 存在重复的元素
         if(window.has(s[right])){

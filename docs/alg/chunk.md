@@ -20,7 +20,7 @@ function chunk(arr,size){
     for(let i = 0; i < arr.length; i += size){
         item.push(arr.slice(i,i + size))
     }
-    return item;
+    return item
 }
 ```
 

@@ -24,8 +24,8 @@
 
 ```js
 function numWays(n){
-    if(n == 2 || n == 1 || n == 0) return n;
-    return numWays(n-1) + numWays(n-2);
+    if(n == 2 || n == 1 || n == 0) return n
+    return numWays(n-1) + numWays(n-2)
 }
 ```
 
@@ -33,18 +33,22 @@ function numWays(n){
 
 ```js
 var numWays = function (n) {
-    var sum,
-        a = 1,
-        b = 1;
-    if (n < 2) return 1;
+    var sum
+    var a = 1
+    var b = 1
+
+    if (n < 2) return 1
     for (let i = 0; i < n - 1; i++) {
-        sum = a + b;
+        sum = a + b
         [a,b] = [b,sum]
-        // a = b;
-        // b = sum;
+        // a = b
+        // b = sum
     }
-    return sum;
+
+    return sum
 };
 ```
+
+来源： 剑指 Offer 10- II
 
 <comment-comment/> 

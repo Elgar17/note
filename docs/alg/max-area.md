@@ -21,16 +21,18 @@ var maxArea = function (height) {
     let right = height.length - 1
     let left = 0
     let res = 0
+
     while (left <= right) {
         let temp = Math.min(height[right], height[left]) * (right - left)
         res = Math.max(res, temp)
         height[right] < height[left] ? right-- : left++
     }
+    
     return res
 }
 ```
 
-来源：力扣（LeetCode）
+来源：力扣第 11 题（LeetCode）
 链接：https://leetcode-cn.com/problems/container-with-most-water
 
 <comment-comment/> 
