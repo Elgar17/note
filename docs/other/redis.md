@@ -1,7 +1,7 @@
 # redis
 
 Key-Value 形式的内存数据库。
-主要用于保存 Sesion。
+主要用于保存 Session 等数据。
 
 ![redis 教程](redis.png)
 

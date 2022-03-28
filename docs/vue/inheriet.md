@@ -1,6 +1,7 @@
 # inheritAttrs
 
 举个例子，假如有一个input组件。
+
 ```html
 // MyInput.vue 组件
 <template>
@@ -52,6 +53,7 @@ export default{
 }
 </script>
 ```
+
 这就可以实现我们想要的效果了：
 
 ```html
@@ -63,11 +65,4 @@ export default{
 </div>
 ```
 
-:::tip
-
-跟谁学一面
-:::
-
-<comment-comment/> 
-
- 
+<comment-comment/>
