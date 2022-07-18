@@ -37,7 +37,7 @@ mysql 安装包相当于一个镜像，还可以安装一个 Linux 系统。
 ```bash
 # 这样下载也可以（推荐，一键安装）
 curl -fsSL https://get.docker.com -o get-docker.sh
-sh get-docker.sh  
+sh get-docker.sh
 
 # 启动
 systemctl start docker
@@ -50,7 +50,7 @@ systemctl start docker
 systemctl status docker
 ```
 
-如果之前安装过docker，先需要卸载旧的版本。
+如果之前安装过 docker，先需要卸载旧的版本。
 
 ```bash
 # 2、卸载旧版本
@@ -78,7 +78,7 @@ yum-config-manager \
 # 5、安装 docker
 yum install docker-ce docker-ce-cli containerd.io
 
-# 6、启动 docker 
+# 6、启动 docker
 systemctl start docker
 ```
 
@@ -130,7 +130,7 @@ systemctl restart docker.service
 docker run hello-world
 ```
 
-运行此命令后，系统从本地查找 `hello-world`  镜像文件，我们这里之前没有，所以从远程仓库去下载`hello-world` 镜像，并执行这个镜像文件。
+运行此命令后，系统从本地查找 `hello-world` 镜像文件，我们这里之前没有，所以从远程仓库去下载`hello-world` 镜像，并执行这个镜像文件。
 
 `hello-world` 竟像在命令窗口显示 'Hello from Docker!' 字样。
 
@@ -191,11 +191,11 @@ docker run -d mysql
 # 停止
 docker stop [容器id]
 
-# 运行 
-docker start [容器id] 
+# 运行
+docker start [容器id]
 
 # 重启
-docker restart [容器id] 
+docker restart [容器id]
 ```
 
 （2）查看当前运行的容器：
@@ -211,7 +211,7 @@ docker ps
 ```bash
 # 删除一个容器
 # 不带 -f 参数，不能删除正在运行的容器
-docker rm -f [容器id] 
+docker rm -f [容器id]
 
 # 删除所有容器
 docker rmi -f $(docker images -aq)
@@ -221,7 +221,7 @@ docker rmi -f $(docker images -aq)
 
 **（1）什么是数据卷？**
 
-当我们在 docker 中安装数据库之后，删除了容器数据也就没了，这不是卫门想要的。
+当我们在 docker 中安装数据库之后，删除了容器数据也就没了，这不是我们呢想要的。
 
 数据卷就是解决这个问题的，数据卷是将 docker 容器中的数据映射到我们真实的环境当中。
 
@@ -236,7 +236,7 @@ docker run -d -v [主机目录]:[容器目录] -p 10050:8088 mysql
 
 通过 `-v` 参数来设置数据共享，**容器目录里创建的文件会同步到主机目录中**。
 
-这个很有用，比如我们需要配置 `nignx`  的文件的话。就映射到主机中，直接添加配置就可以了，容器内自动同步。
+这个很有用，比如我们需要配置 `nignx` 的文件的话。就映射到主机中，直接添加配置就可以了，容器内自动同步。
 
 （2）匿名挂载，具名挂载
 
@@ -283,7 +283,7 @@ docker volume inspect blogSqlData
 
 ```bash
 # 安装 docker compose
-curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
 # 打开权限
 chmod +x /usr/local/bin/docker-compose
@@ -313,13 +313,13 @@ vi docker-compose.yml
 这是添加一个启动 `mongo` 的命令
 
 ```yml
-version: '3'
+version: "3"
 services:
-  mongo1:               # 容器的名字
-    image: mongo:4      # 使用的镜像
-    ports:              # 映射端口
+  mongo1: # 容器的名字
+    image: mongo:4 # 使用的镜像
+    ports: # 映射端口
       -10050:27017
-    environment:        # 设置用户名密码    
+    environment: # 设置用户名密码
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: 981102
 ```
@@ -329,18 +329,21 @@ services:
 **先切换到 存放`docker-compose.yml` 文件的目录，**然后使用此命令，启动
 
 ```bash
-# 启动
+# 启动全部
 docker-compose up -d
 
+# 通过名字启动，mongo1 是名字
+docker-compose up -d mongo1
+
 # 停止
-docker-compose up -d
+docker-compose stop
 
 # 删除
 docker-compose rm
 
 # 查看运行的容器
 docker-compose ps
-````
+```
 
 ## 7. 进入容器，拷贝文件
 
@@ -348,13 +351,13 @@ docker-compose ps
 
 进入 docker 容器就是，比如我们安装一个 MongoDB 数据库容器，用命令行进入容器内，进行**查看数据，查看文件存放那根目录，修改配置**等操作。
 
- 先使用 `docker ps`  查看要进入的容器的id 。
+先使用 `docker ps` 查看要进入的容器的 id 。
 
 ```bash
 # 进入容器(打开新窗口)
 docker exec -it [容器id] bash
 
-# 打开正在后台运行的端口 
+# 打开正在后台运行的端口
 docker attach [容器id]
 
 # 退出容器
@@ -377,7 +380,7 @@ docker cp 容器id:容器内路径 目的主机路径
 
 ## 8. docker 仓库
 
-先到 docker hub 注册账号之后，安装docker 的服务器上登录：
+先到 docker hub 注册账号之后，安装 docker 的服务器上登录：
 
 ```bash
 # 登录
