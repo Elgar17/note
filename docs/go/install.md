@@ -19,6 +19,8 @@ Go 语言中有两个重要的目录：
 
 ## 3. 添加环境变量
 
+### windows 环境
+
 我们现需要添加三个环境变量，一个是 Go 语言的安装目录 `GOROOT`，另一个是我们写程序的目录 `GOPATH`。
 
 - `GOROOT`，Go 语言的安装目录
@@ -42,6 +44,44 @@ go env
 
 使用上面的命令查看 `GOPATH`，添加环境变量为 `GOPATH`, 我的目录为 `D:\go`，以后代码都写在这个目录下。
 
+### Linux 环境
+
+(1) 下载 Linux 包 [下载链接](https://golang.google.cn/dl/)。
+
+(2) 下载完成后命令行进入下载的目录解压
+
+```bash
+tar -xzvf go1.18.4.linux-amd64.tar.gz
+```
+
+(3) 解压生成 go 的文件夹，go 文件夹移动到 /usr/local
+
+```bash
+mv go /usr/local/
+```
+
+(4) 创建三个目录，go 代码写在 /home/go/src 中。
+
+```bash
+mkdir -p /home/go/bin /home/go/pkg /home/go/src
+```
+
+（5）添加环境变量
+
+下面的环境变量添加到 /etc/profile，如果安装了 zsh，要存放到 ~/.zshrc 中。
+
+```bash
+export GOROOT=/usr/local/go
+export GOPATH=/home/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+```
+
+打开新终端运行下面的命令，打印版本说明，安装成功。
+
+```bash
+go version
+```
+
 ## 4. 安装插件与工具
 
 vscode 下载 go 插件，我这里 vscode 作为开发工具。
@@ -49,8 +89,8 @@ vscode 下载 go 插件，我这里 vscode 作为开发工具。
 完成后设置安装这些工具的地址，由于国内屏蔽了 go 官方网址，需要代理到国内。
 
 ```bash
-go env -w GO111MODULE=auto
-
+set GO111MODULE=on
+# 设置国内的下载源
 go env -w GOPROXY=https://goproxy.cn,direct
 ```
 
