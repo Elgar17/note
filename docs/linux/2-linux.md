@@ -121,7 +121,7 @@ mv foo.txt bar.txt
 mv foo.txt /home
 
 # 复制文件到 home 目录下
-mv foo.txt /home
+cp foo.txt /home
 ```
 
 （6） 切换用户
