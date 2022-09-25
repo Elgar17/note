@@ -9,6 +9,7 @@ const java = require('./java')
 const go = require('./go')
 const goWeb = require('./go-web')
 const sql = require('./sql')
+const linux = require('./linux')
 
 module.exports = {
     '/html-css/': htmlCss,
@@ -21,5 +22,6 @@ module.exports = {
     '/java/': java,
     '/go/': go,
     '/go-web/': goWeb,
-    '/sql/': sql
+    '/sql/': sql,
+    'linux': linux
 }

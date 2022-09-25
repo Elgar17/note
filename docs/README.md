@@ -33,6 +33,7 @@ footer: MIT Licensed | Copyright © 2021 Elǵar
 
 （4）其他
 
+- [💻 Linux](https://kz321.top/docs/linux/)
 - [🎾 Network](https://kz321.top/docs/network/)
 - [🐋 Docker](https://kz321.top/docs/other/docker.html)
 - [📊 数据库](https://kz321.top/docs/sql/)
