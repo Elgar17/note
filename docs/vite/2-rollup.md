@@ -1,6 +1,8 @@
 # Rollup
 
-JavaScript 打包工具，默认支持 ES。
+JavaScript 打包工具，类似于 webpack，Rollup 更适合打包一些小型工具库，默认支持 ES Module。
+
+本文章介绍 Rollup 的基本使用和配置，并编写一个 Rollup Json 插件。
 
 ## 快速使用
 

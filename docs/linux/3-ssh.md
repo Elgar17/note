@@ -23,6 +23,6 @@ cat ~/.ssh/id_rsa.pub
 最后设置用户名和邮箱即可使用。
 
 ```bash
-git config --global user.email "eail@gmail.com"
+git config --global user.email "email@gmail.com"
 git config --global user.name "userName"
 ```

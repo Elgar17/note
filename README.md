@@ -24,6 +24,7 @@
 
 （4）其他
 
+- [🐧 Linux](https://www.kz321.top/docs/linux/)
 - [🐋 Docker](https://www.kz321.top/docs/other/docker.html)
 - [📊 MYSQL](https://www.kz321.top/docs/other/mysql.html)
 - [🥭 MongoDB](https://www.kz321.top/docs/other/mongodb.html)
