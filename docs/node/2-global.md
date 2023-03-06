@@ -73,15 +73,19 @@ console.log('开始')
 
 ## 3. 模块化系统
 
-模块化是指将一个很多的代码拆分成多多个模块。
+模块化是指将一个很多的代码拆分成多多个模块，模块可以理解成文件，一个文件就是一个模块。常用的模块化方案有一下几种：
+
+- UMD：
+    - AMD：异步模块定义
+    - CommonJs(CJS)：适用于 Node.js 环境
+- ESM：ES Module
+- iife：自执行函数，使用与 script 标签加载。
 
 ![modle](require.png)
 
 图中第一句是在文件 `app.js`中引入 `a.js`的文件，用 `add` 变量来接受。
 
-Node 的模块化是基于 Common.js 规范。
-
-使用方法如下，在 `b.js` 中使用 `a.js` 里面的函数。
+Node 的模块化是基于 Common.js 规范，使用方法如下，在 `b.js` 中使用 `a.js` 里面的函数。
 
 ```js
 // a.js
