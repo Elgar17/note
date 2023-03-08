@@ -82,13 +82,30 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 go version
 ```
 
-## 4. 安装插件与工具
+## 4. 关于 GO111MODULE
+
+GO111MODULE 是一个环境变量，用于控制Go语言的模块行为。这个变量有三个可选值：
+
+- off：表示禁用 Go modules，依赖包将会被下载到 `$GOPATH/src` 目录下；
+- on：表示启用 Go modules，依赖包将会被下载到当前项目的 vendor 目录下，或者是 `go mod vendor` 命令指定的目录下；
+- auto：表示开启 Go modules，并且按照项目的目录结构来决定是否启用模块。
+
+如果环境变量 GO111MODULE 的值是 off，那么就会禁用 Go Modules，使用旧有的 GOPATH 和 vendor 目录来管理依赖。
+
+如果环境变量 GO111MODULE 的值是 on，那么就会强制启用 Go Modules，即使当前项目并没有包含go.mod文件。
+
+如果环境变量 GO111MODULE 的值是 auto，则会根据项目目录下是否存在go.mod文件来决定是否启用Go Modules。
+
+使用 Go Modules 可以有效地管理项目依赖，使得开发者可以更加方便的管理和维护项目。
+
+## 5. 安装插件与工具
 
 vscode 下载 go 插件，我这里 vscode 作为开发工具。
 
 完成后设置安装这些工具的地址，由于国内屏蔽了 go 官方网址，需要代理到国内。
 
 ```bash
+# 使用 Go Modules 管理项目依赖
 set GO111MODULE=on
 # 设置国内的下载源
 go env -w GOPROXY=https://goproxy.cn,direct
