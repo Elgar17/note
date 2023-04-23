@@ -42,13 +42,13 @@ func (s score) prtnMath()  {
 }
 ```
 
-下面这种情况会报错。
+下面这种情况是，student 结构体也拥有了 score 的方法。
 
 ```go
 s := score{56, 45}
 s1 := student{"Jerry", 15, s}
 
-s1.Score.prtnMath() // 报错
+s1.Score.prtnMath() //
 ```
 
 我们可以修改一部分程序，可以将 `studen` 结构体继承 `score` 结构体的方法。

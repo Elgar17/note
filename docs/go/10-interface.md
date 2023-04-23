@@ -13,8 +13,8 @@ type Sayer interface {
 上面这例子，定义了一个 Sayer 的接口。
 
 ```go
-type sheep struce {}
-type dog struce {}
+type sheep struct {}
+type dog struct {}
 ```
 
 这里定义了两个结构体，下面我们让这两个结构体继承 Sayer 接口。

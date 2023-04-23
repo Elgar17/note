@@ -107,7 +107,7 @@ var num int8 = 166 // 报错
 
 （2）浮点型（float）
 
-go 语言中没有 `double`，只有 `float`.
+go 语言中没有 `double`，只有 `float`。
 
 - float32：32位浮点型数
 - float64：64位浮点型数
@@ -144,6 +144,9 @@ const (
 var i, j int
 i, j = 2, 3
 fmt.Println(i, j) // 2 3
+
+i, j = i, j // 变量交换
+fmt.Println(i, j) // 3 2
 ```
 
 ## 3. 字符串
@@ -212,7 +215,7 @@ s := "hello" + 10
 // 报错
 ```
 
-byte 是 int8 的别名.
+byte 是 int8 的别名。
 
 字符串的长度可以使用，内置函数 `len` 来获取。
 

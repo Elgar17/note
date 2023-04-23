@@ -153,7 +153,40 @@ func (s student) printStu(){
 }
 ```
 
-方法也可以有参数和返回值，这些跟普通函数一样。
+方法也可以有参数和返回值，这些跟普通函数一样。在上面 printStu 中，s 的类型是不是指针类型，通常要写成指针类型。
+
+```go
+func (s *student) printStu(){
+    fmt.Println(s)
+}
+```
+
+通过下面的例子看下两者的区别，可以看出不是指针类型，方法内部获取的结构体是，实例的副本，也就是在方法内部是拷贝之后的，结构体类型为指针，获取的是当前实例本事。
+
+```go
+type User struct {
+    Name string
+}
+
+func (u User) sayName() {
+    fmt.Println(u.Name)
+    u.Name = "John Doe"
+}
+
+func (u *User) sayName1() {
+    fmt.Println(u.Name)
+    u.Name = "John Doe"
+}
+
+func main() {
+    s := User{"Tom"}
+    s.sayName()
+    fmt.Println(s.Name) // 结果：Tom
+    s.sayName1()
+    fmt.Println(s.Name) // 结果："John Doe"
+}
+```
+
 
 <!-- TODO: ## 6. go 语言中的 class -->
 <!-- TODO: ## 6. go 语言中的 class -->

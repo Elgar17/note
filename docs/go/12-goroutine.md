@@ -114,15 +114,15 @@ func main() {
     for i := 0; i < 3; i++{
         go sync(i)
     }
-    time.Sleep(4 * time.Second)
+    time.Sleep(time.Duration(4) * time.Second)
 }
 
 func sync(i int) {
-    time.Sleep(2 * time.Second) // 等待三秒
+    time.Sleep(time.Duration(3) * time.Second) // 等待三秒
     fmt.Println("sync func", i)
 }
-// sync func 1
 // sync func 0
+// sync func 1
 // sync func 2
 ```
 
